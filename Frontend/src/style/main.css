@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+.test {
+  background-color: rgb(160, 160, 228);
+}
+
+.NavBar-Container {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: center;
+  width: 70%;
+}
+.NavBar-Container.active {
+  width: 50%;
+}
+
+.Folder-image {
+  width: 15px;
+}
+
+.Avatar {
+  width: 15px;
+}/*# sourceMappingURL=main.css.map */
