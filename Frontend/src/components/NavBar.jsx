@@ -19,8 +19,8 @@ export default function NavBar() {
       <div className={`Home${menuSize ? " active" : ""}`}>
         {menuSize ? (
           <img
-            className="Folder-image"
-            src="./src/assets/folder.png"
+            className="House"
+            src="./src/assets/home.png"
             alt="Image d'accueil"
           />
         ) : (
@@ -29,17 +29,29 @@ export default function NavBar() {
       </div>
       <div className={`Presentation${menuSize ? " active" : ""}`}>
         {menuSize ? (
-          <img
-            className="Avatar"
-            src="./scr/assets/girl-dynamic-gradient.png"
-            alt="Avatar"
-          />
+          <img className="Avatar" src="./scr/assets/women.png" alt="Avatar" />
         ) : (
           "Presentation"
         )}
       </div>
-      <div>Projects</div>
-      <div>Contact</div>
+      <div className={`Project${menuSize ? " active" : ""}`}>
+        {menuSize ? (
+          <img
+            className="Project"
+            src="./scr/assets/folder.png"
+            alt="Folder image"
+          />
+        ) : (
+          "Project"
+        )}
+      </div>
+      <div className={`Contact${menuSize ? " active" : ""}`}>
+        {menuSize ? (
+          <img className="Contact" src="./scr/assets/contact.png" alt="Phone" />
+        ) : (
+          "Contact"
+        )}
+      </div>
     </div>
   );
 }
