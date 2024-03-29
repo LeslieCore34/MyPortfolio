@@ -15,43 +15,33 @@ export default function NavBar() {
   }, []);
 
   return (
-    <div className="NavBar-Container">
-      <div className={`Home${menuSize ? " active" : ""}`}>
-        {menuSize ? (
-          <img
-            className="House"
-            src="./src/assets/home.png"
-            alt="Image d'accueil"
-          />
-        ) : (
-          "Home"
-        )}
+    <nav className="NavBar">
+      <div className="NavBar-Container">
+        <a
+          href="#section-home"
+          className={`home-link ${menuSize ? "active" : ""}`}
+        >
+          {menuSize ? null : "Home"}
+        </a>
+        <a
+          href="#section-presentation"
+          className={`presentation-link ${menuSize ? "active" : ""}`}
+        >
+          {menuSize ? null : "Presentation"}
+        </a>
+        <a
+          href="#section-projects"
+          className={`projects-link ${menuSize ? "active" : ""}`}
+        >
+          {menuSize ? null : "Projects"}
+        </a>
+        <a
+          href="#section-contact"
+          className={`contact-link ${menuSize ? "active" : ""}`}
+        >
+          {menuSize ? null : "Contact"}
+        </a>
       </div>
-      <div className={`Presentation${menuSize ? " active" : ""}`}>
-        {menuSize ? (
-          <img className="Avatar" src="./scr/assets/women.png" alt="Avatar" />
-        ) : (
-          "Presentation"
-        )}
-      </div>
-      <div className={`Project${menuSize ? " active" : ""}`}>
-        {menuSize ? (
-          <img
-            className="Project"
-            src="./scr/assets/folder.png"
-            alt="Folder image"
-          />
-        ) : (
-          "Project"
-        )}
-      </div>
-      <div className={`Contact${menuSize ? " active" : ""}`}>
-        {menuSize ? (
-          <img className="Contact" src="./scr/assets/contact.png" alt="Phone" />
-        ) : (
-          "Contact"
-        )}
-      </div>
-    </div>
+    </nav>
   );
 }

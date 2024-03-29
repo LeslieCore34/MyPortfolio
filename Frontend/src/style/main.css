@@ -10,29 +10,80 @@
   background-color: rgb(160, 160, 228);
 }
 
+.NavBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgray;
+}
+
 .NavBar-Container {
   background-color: white;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  width: 70%;
-}
-.NavBar-Container.active {
+  align-items: center;
   width: 50%;
+  height: 50px;
+  border-radius: 1rem;
 }
 
-.House {
-  width: 15px;
+.home-link {
+  background-color: lightgray;
+  width: 100px;
+  height: 50px;
+}
+.home-link.active {
+  background-color: white;
+  background-image: url("../assets/home.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  margin: 0.5em;
 }
 
-.Avatar {
-  width: 15px;
+.presentation-link {
+  background-color: lightgray;
+  width: 100px;
+  height: 50px;
+}
+.presentation-link.active {
+  background-color: white;
+  background-image: url("../assets/woman.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  margin: 0.5em;
 }
 
-.Project {
-  width: 15px;
+.projects-link {
+  background-color: lightgray;
+  width: 100px;
+  height: 50px;
+}
+.projects-link.active {
+  background-color: white;
+  background-image: url("../assets/folder.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  margin: 0.5em;
 }
 
-.Contact {
-  width: 15px;
+.contact-link {
+  background-color: lightgray;
+  width: 100px;
+  height: 50px;
+}
+.contact-link.active {
+  background-color: white;
+  background-image: url("../assets/contact.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  margin: 0.5em;
 }/*# sourceMappingURL=main.css.map */
