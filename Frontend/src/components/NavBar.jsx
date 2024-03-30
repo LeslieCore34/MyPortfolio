@@ -19,25 +19,25 @@ export default function NavBar() {
       <div className="NavBar-Container">
         <a
           href="#section-home"
-          className={`home-link ${menuSize ? "active" : ""}`}
+          className={`home-link link ${menuSize ? "active" : ""}`}
         >
           {menuSize ? null : "Home"}
         </a>
         <a
           href="#section-presentation"
-          className={`presentation-link ${menuSize ? "active" : ""}`}
+          className={`presentation-link link ${menuSize ? "active" : ""}`}
         >
           {menuSize ? null : "Presentation"}
         </a>
         <a
           href="#section-projects"
-          className={`projects-link ${menuSize ? "active" : ""}`}
+          className={`projects-link link ${menuSize ? "active" : ""}`}
         >
           {menuSize ? null : "Projects"}
         </a>
         <a
           href="#section-contact"
-          className={`contact-link ${menuSize ? "active" : ""}`}
+          className={`contact-link link ${menuSize ? "active" : ""}`}
         >
           {menuSize ? null : "Contact"}
         </a>

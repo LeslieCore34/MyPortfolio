@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -6,30 +7,53 @@
   list-style: none;
 }
 
-.test {
-  background-color: rgb(160, 160, 228);
-}
-
 .NavBar {
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: lightgray;
+  align-content: center;
+  background-color: white;
+  z-index: 2;
+  border-radius: 0em 0em 5em 5em;
+  width: 80%;
+  margin-left: 10%;
+  height: 60px;
+}
+.NavBar::before, .NavBar::after {
+  content: "";
+  position: absolute;
+  /* ajuster la taille selon l'effet désiré */
+  width: 20px;
+  height: 20px;
+  /* optionnel: couleur de fond pour accentuer l'effet */
+  background-color: white;
+}
+.NavBar::before {
+  top: -8px;
+  left: -4px;
+  /* optionnel: changer la direction de l'extension */
+  transform: rotate(63deg);
+}
+.NavBar::after {
+  top: -6px;
+  right: -2px;
+  /* optionnel: changer la direction de l'extension */
+  transform: rotate(-68deg);
 }
 
 .NavBar-Container {
-  background-color: white;
+  background-color: lightgray;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  width: 50%;
-  height: 50px;
+  width: 70%;
+  height: 38px;
   border-radius: 1rem;
 }
 
 .home-link {
-  background-color: lightgray;
   width: 100px;
   height: 50px;
 }
@@ -44,7 +68,6 @@
 }
 
 .presentation-link {
-  background-color: lightgray;
   width: 100px;
   height: 50px;
 }
@@ -59,7 +82,6 @@
 }
 
 .projects-link {
-  background-color: lightgray;
   width: 100px;
   height: 50px;
 }
@@ -74,7 +96,6 @@
 }
 
 .contact-link {
-  background-color: lightgray;
   width: 100px;
   height: 50px;
 }
@@ -86,4 +107,33 @@
   width: 30px;
   height: 30px;
   margin: 0.5em;
+}
+
+.home-container {
+  background-image: url(../assets/blue-wallpaper.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 600px;
+  border-radius: 1em;
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#section-home {
+  color: white;
+}
+
+@media screen and (min-width: 768px) {
+  nav {
+    width: 80%;
+    margin: auto;
+  }
+  .link {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 1em;
+  }
 }/*# sourceMappingURL=main.css.map */
