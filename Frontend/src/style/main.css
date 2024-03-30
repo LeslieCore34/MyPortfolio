@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -43,7 +44,7 @@
 }
 
 .NavBar-Container {
-  background-color: lightgray;
+  background-color: #f2f2f2;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -58,12 +59,12 @@
   height: 50px;
 }
 .home-link.active {
-  background-color: white;
-  background-image: url("../assets/home.png");
+  background-color: lightgray;
+  background-image: url("../assets/home2.png");
   background-size: contain;
   background-repeat: no-repeat;
-  width: 30px;
-  height: 30px;
+  width: 17px;
+  height: 17px;
   margin: 0.5em;
 }
 
@@ -72,12 +73,12 @@
   height: 50px;
 }
 .presentation-link.active {
-  background-color: white;
-  background-image: url("../assets/woman.png");
+  background-color: lightgrey;
+  background-image: url("../assets/user.png");
   background-size: contain;
   background-repeat: no-repeat;
-  width: 30px;
-  height: 30px;
+  width: 17px;
+  height: 17px;
   margin: 0.5em;
 }
 
@@ -86,12 +87,12 @@
   height: 50px;
 }
 .projects-link.active {
-  background-color: white;
-  background-image: url("../assets/folder.png");
+  background-color: lightgrey;
+  background-image: url("../assets/project.png");
   background-size: contain;
   background-repeat: no-repeat;
-  width: 30px;
-  height: 30px;
+  width: 17px;
+  height: 17px;
   margin: 0.5em;
 }
 
@@ -100,12 +101,12 @@
   height: 50px;
 }
 .contact-link.active {
-  background-color: white;
-  background-image: url("../assets/contact.png");
+  background-color: lightgrey;
+  background-image: url("../assets/phone.png");
   background-size: contain;
   background-repeat: no-repeat;
-  width: 30px;
-  height: 30px;
+  width: 17px;
+  height: 17px;
   margin: 0.5em;
 }
 
@@ -123,6 +124,14 @@
 
 #section-home {
   color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  margin: 1em;
+  font-size: 22px;
 }
 
 @media screen and (min-width: 768px) {

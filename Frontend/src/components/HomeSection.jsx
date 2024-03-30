@@ -3,7 +3,8 @@ export default function HomeSection() {
     <>
       <div className="home-container">
         <div id="section-home">
-          A simple portfolio <br /> Discover all my projects
+          <p className="title">Welcome</p>
+          <p className="title"> Discover all my projects</p>
         </div>
       </div>
     </>
