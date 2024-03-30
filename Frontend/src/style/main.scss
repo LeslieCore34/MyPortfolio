@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
-@import "_variable_scss";
 
 * {
   margin: 0;
@@ -50,7 +49,7 @@
 }
 
 .NavBar-Container {
-  background-color: $lightgrey;
+  background-color: #f2f2f2;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -65,7 +64,7 @@
   height: 50px;
 
   &.active {
-    background-color: $lightgrey;
+    background-color: #f2f2f2;
     background-image: url("../assets/home2.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -80,7 +79,7 @@
   height: 50px;
 
   &.active {
-    background-color: $lightgrey;
+    background-color: #f2f2f2;
     background-image: url("../assets/user.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -95,7 +94,7 @@
   height: 50px;
 
   &.active {
-    background-color: $lightgrey;
+    background-color: #f2f2f2;
     background-image: url("../assets/project.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -123,18 +122,15 @@
 // HOME SECTION
 
 .home-container {
-  // background-image: url(../assets/blue-wallpaper.jpg);
+  background-image: url(../assets/blue-wallpaper.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 600px;
   z-index: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-img {
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 1em;
-  margin-top: 1em;
+  border-radius: 2em;
 }
 
 #section-home {
