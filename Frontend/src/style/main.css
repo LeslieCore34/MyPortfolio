@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
 * {
   padding: 0;
@@ -23,22 +22,18 @@
 .NavBar::before, .NavBar::after {
   content: "";
   position: absolute;
-  /* ajuster la taille selon l'effet désiré */
   width: 20px;
   height: 20px;
-  /* optionnel: couleur de fond pour accentuer l'effet */
   background-color: white;
 }
 .NavBar::before {
   top: -7px;
   left: -3px;
-  /* optionnel: changer la direction de l'extension */
   transform: rotate(63deg);
 }
 .NavBar::after {
   top: -6px;
   right: -1px;
-  /* optionnel: changer la direction de l'extension */
   transform: rotate(-68deg);
 }
 
@@ -113,13 +108,13 @@
   background-image: url(../assets/blue-wallpaper.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 600px;
+  height: 500px;
   z-index: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 2em;
-  padding-top: 1em;
+  margin: 1em;
 }
 
 .home {
@@ -129,9 +124,39 @@
   align-items: center;
 }
 
-.title {
+.presentation-container {
+  background-image: url(../assets/blue-wallpaper.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+  width: 80%;
+  display: flex;
+  align-items: flex-start;
+  border-radius: 2em 2em 2em 2em;
+  position: relative;
   margin: 1em;
-  font-size: 22px;
+}
+.presentation-container .presentation {
+  color: white;
+}
+.presentation-container .presentation-title1 {
+  font-size: larger;
+  margin-left: 12%;
+}
+.presentation-container .presentation-title2 {
+  font-size: large;
+  text-align: justify;
+  margin: 1.5em;
+  margin-top: 2em;
+}
+
+.grey {
+  width: 82%;
+  background-image: url(../assets/grey.PNG);
+  height: 230px;
+  position: absolute;
+  border-radius: 1em 1em 1em 1em;
+  margin-left: 0.5em;
 }
 
 @media screen and (min-width: 768px) {

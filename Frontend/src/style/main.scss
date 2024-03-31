@@ -25,24 +25,20 @@
   &::after {
     content: "";
     position: absolute;
-    /* ajuster la taille selon l'effet désiré */
     width: 20px;
     height: 20px;
-    /* optionnel: couleur de fond pour accentuer l'effet */
     background-color: white;
   }
 
   &::before {
     top: -7px;
     left: -3px;
-    /* optionnel: changer la direction de l'extension */
     transform: rotate(63deg);
   }
 
   &::after {
     top: -6px;
     right: -1px;
-    /* optionnel: changer la direction de l'extension */
     transform: rotate(-68deg);
   }
 }
@@ -124,13 +120,13 @@
   background-image: url(../assets/blue-wallpaper.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 600px;
+  height: 500px;
   z-index: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 2em;
-  padding-top: 1em;
+  margin: 1em;
 }
 
 .home {
@@ -140,10 +136,47 @@
   align-items: center;
 }
 
-.title {
+// PRESENTATION SECTION
+
+.presentation-container {
+  background-image: url(../assets/blue-wallpaper.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+  width: 80%;
+  display: flex;
+  align-items: flex-start;
+  border-radius: 2em 2em 2em 2em;
+  position: relative;
   margin: 1em;
-  font-size: 22px;
+
+  .presentation {
+    color: white;
+  }
+
+  .presentation-title1 {
+    font-size: larger;
+    margin-left: 12%;
+  }
+
+  .presentation-title2 {
+    font-size: large;
+    text-align: justify;
+    margin: 1.5em;
+    margin-top: 2em;
+  }
 }
+
+.grey {
+  width: 82%;
+  background-image: url(../assets/grey.PNG);
+  height: 230px;
+  position: absolute;
+  border-radius: 1em 1em 1em 1em;
+  margin-left: 0.5em;
+}
+
+// TECHNICAL STACK
 
 @media screen and (min-width: 768px) {
   nav {
