@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
 * {
   padding: 0;
+  margin: 0;
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
+  font-family: "Noto Sans", sans-serif;
 }
 
 .NavBar {
@@ -105,7 +107,7 @@
 }
 
 .home-container {
-  background-image: url(../assets/blue-wallpaper.jpg);
+  background: linear-gradient(-3deg, #aa97ea, #8072f0);
   background-repeat: no-repeat;
   background-size: cover;
   height: 500px;
@@ -116,47 +118,90 @@
   border-radius: 2em;
   margin: 1em;
 }
-
-.home {
+.home-container .home {
   color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+.home-container .home .welcome-title {
+  font-size: 25px;
+  font-style: italic;
+}
+.home-container .home .intro-title {
+  font-size: 20px;
+}
+
+.grey {
+  width: 76%;
+  background-image: url(../assets/grey.PNG);
+  height: 160px;
+  position: absolute;
+  border-radius: 2em 2em 2em 2em;
+  margin-left: 18%;
+}
+.grey .presentation-title1 {
+  font-size: 16px;
+  margin-left: 7%;
+  margin-top: 1em;
+  position: relative;
+}
 
 .presentation-container {
-  background-image: url(../assets/blue-wallpaper.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 200px;
-  width: 80%;
+  background-color: #d5bde5;
+  height: 91px;
+  width: 75%;
   display: flex;
   align-items: flex-start;
   border-radius: 2em 2em 2em 2em;
   position: relative;
   margin: 1em;
+  margin-left: 20%;
+  margin-top: 17%;
 }
 .presentation-container .presentation {
   color: white;
 }
-.presentation-container .presentation-title1 {
-  font-size: larger;
-  margin-left: 12%;
-}
 .presentation-container .presentation-title2 {
-  font-size: large;
+  font-size: 14px;
   text-align: justify;
-  margin: 1.5em;
-  margin-top: 2em;
+  margin: 7%;
+  margin-top: 1em;
 }
 
-.grey {
-  width: 82%;
+.grey-technical {
+  width: 76%;
   background-image: url(../assets/grey.PNG);
-  height: 230px;
+  height: 450px;
   position: absolute;
   border-radius: 1em 1em 1em 1em;
-  margin-left: 0.5em;
+  margin-left: 18%;
+}
+
+.technical-container {
+  background-color: #d5bde5;
+  width: 75%;
+  display: flex;
+  align-items: flex-start;
+  border-radius: 2em 2em 2em 2em;
+  position: relative;
+  margin: 1em;
+  margin-left: 20%;
+  margin-top: 4%;
+}
+.technical-container .technical-text-container {
+  color: white;
+  text-align: justify;
+  margin: 7%;
+  margin-top: 2em;
+}
+.technical-container .technical-text-container .technical-title {
+  font-size: 18px;
+  margin-bottom: 1%;
+}
+.technical-container .technical-text-container .technical-text {
+  font-size: 15px;
+  margin-bottom: 1em;
 }
 
 @media screen and (min-width: 768px) {
