@@ -237,6 +237,16 @@
   }
 }
 
+// STACK
+
+.test-container {
+  background-image: url(../assets/html2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 25px;
+  height: 25px;
+}
+
 @media screen and (min-width: 768px) {
   nav {
     width: 80%;
