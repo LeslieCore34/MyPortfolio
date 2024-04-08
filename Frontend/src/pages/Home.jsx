@@ -9,9 +9,12 @@ export default function Home() {
     <>
       <NavBar />
       <HomeSection />
-      <PresentationSection />
-      <TechnicalStack />
-      <StackImages />
+      <div className="grid-container">
+        <PresentationSection />
+        <TechnicalStack />
+        <StackImages />
+      </div>
+
       <div id="#section-projects">Contenu de la page Projects</div>
       <div id="#section-contact">Contenu de la page Contact</div>
     </>

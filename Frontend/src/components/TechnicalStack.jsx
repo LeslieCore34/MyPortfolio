@@ -1,8 +1,8 @@
 export default function TechnicalStack() {
   return (
     <>
-      <div className="grey-technical"></div>
       <div className="technical-container">
+        <div className="grey-technical"></div>
         <div id="section-presentation" className=" technical-text-container">
           <h1 className="technical-title">Database</h1>
           <p className="technical-text">
@@ -15,8 +15,8 @@ export default function TechnicalStack() {
           </p>
           <h3 className="technical-title">Front-end</h3>
           <p className="technical-text">
-            Front-end: <br /> I can design and develop front-end user interfaces
-            and optimize ReactJS assets.
+            I can design and develop front-end user interfaces and optimize
+            ReactJS assets.
           </p>
           <h4 className="technical-title">Project Management</h4>
           <p className="technical-text">
