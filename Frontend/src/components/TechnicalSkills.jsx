@@ -4,20 +4,20 @@ export default function TechnicalSkills() {
       <div id="section-presentation" className=" technical-text-container">
         <h1 className="technical-title">Database</h1>
         <p className="technical-text">
-          I know how to design, manipulate, and query MySQL databases.
+          Skilled in designing, manipulating, and querying databases to ensure
+          efficient data storage and retrieval.
         </p>
         <h2 className="technical-title">Back-end</h2>
         <p className="technical-text">
-          I have experience in developping back-end and APIs as NodeJS -
-          ExpressJS webservices.
+          Experienced in building Back-End APIs with Node.js and Express.js.
         </p>
         <h3 className="technical-title">Front-end</h3>
         <p className="technical-text">
-          I can design and develop front-end user interfaces and optimize
-          ReactJS assets.
+          Design and develop user interfaces with a focus on ReactJS asset
+          optimization
         </p>
         <h4 className="technical-title">Project Management</h4>
-        <p className="technical-text">
+        <p className="technical-text management">
           I can manage projects and timelines using Agile development methods,
           with experience in Scrum methods.
         </p>

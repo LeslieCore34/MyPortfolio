@@ -5,17 +5,16 @@ export default function StreetArt() {
     <div className="project-container" id="section-projects">
       <div className="project-image"> </div>
       <p className="project-description">
-        Street-Art Hunters is a project I developed with two classmates during
-        my studies. The application features a user interface built with React
-        and styled using SCSS. We implemented a REST API using the Express
-        framework on Node.js. The project utilizes a MySQL database for data
-        storage.
+        <span>Street-Art Hunters</span> is a project I developed with two
+        classmates during my studies. This web application features a user
+        interface built with React and styled using SCSS. We implemented a REST
+        API using the Express framework and Node.js. The database was created
+        using MySQL.
       </p>
-
       <p className="project-use-description">
-        Use your camera to capture the city's street art, and rack up points for
-        your discoveries. Track your progress and see how you stack up against
-        other players on the global leaderboard!
+        Use your camera to capture the city street art, and cumulate points for
+        each discoveries. Track your progress and see how you stack up against
+        other players !
       </p>
 
       <Link

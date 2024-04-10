@@ -1,13 +1,13 @@
 export default function PresentationSection() {
   return (
     <>
-      <div id="section-presentation" className="presentation-container">
+      <section id="section-presentation" className="presentation-container">
         <h1 className="presentation-title">Fullstack Developer </h1>
         <p className="presentation-title2">
-          I have experience with front-end, back-end, and database layers of
-          client-server applications.
+          Proficient in front-end development (HTML, CSS, JavaScript), back-end
+          development (Node.js), and database management (MySQL).
         </p>
-      </div>
+      </section>
     </>
   );
 }
