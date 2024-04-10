@@ -256,6 +256,19 @@
 }
 .project-container .project-description {
   margin-top: 1em;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.project-container .project-use-description {
+  margin-top: 10px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.project-container .link-streetart {
+  margin-left: 30%;
+  margin-top: 10px;
 }
 
 @media screen and (min-width: 768px) {
