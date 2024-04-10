@@ -254,6 +254,41 @@
   }
 }
 
+// PROJECT
+.project-container {
+  background: linear-gradient(-45deg, #ffffff, #f8f5f6, #f4f1f1);
+  height: auto;
+  width: 90%;
+  margin: 1em;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 2em 2em 2em 2em;
+  color: black;
+  text-align: justify;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding: 15px;
+  box-shadow: 0 0 3px 2px rgb(0, 0, 0);
+  overflow-x: hidden;
+
+  // .project-description {
+  //   width: ;
+  // }
+  .project-image {
+    background-image: url(../assets/street-art-devices2.png);
+    background-repeat: no-repeat;
+    object-fit: contain;
+    width: auto;
+    height: 274px;
+  }
+
+  .project-description {
+    margin-top: 1em;
+  }
+}
+
 @media screen and (min-width: 768px) {
   nav {
     width: 80%;
