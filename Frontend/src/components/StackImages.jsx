@@ -8,6 +8,7 @@ export default function StackImages() {
         <div className="react container"></div>
         <div className="node container"></div>
         <div className="mysql container"></div>
+        <div className="postman container"></div>
       </div>
     </>
   );

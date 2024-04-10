@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
 * {
   padding: 0;
   margin: 0;
@@ -120,33 +122,29 @@
 
 // HOME SECTION
 
-.home-container {
-  // background-color: #0c0c0c;
+.home {
   background: linear-gradient(-45deg, #181819, #0c0c0c, #242525);
-
-  // background-repeat: no-repeat;
-  // background-size: cover;
   height: 500px;
-  z-index: 0;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   border-radius: 2em;
   margin: 1em;
+  color: white;
 
-  .home {
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    .welcome-title {
-      font-size: 25px;
-      font-style: italic;
-    }
-    .intro-title {
-      font-size: 20px;
-    }
+  .name {
+    font-size: 25px;
+    margin: 5px;
+  }
+  .fullstack {
+    font-size: 25px;
+    margin: 5px;
+  }
+  .welcome {
+    font-size: 35px;
+    margin: 2em;
+    font-style: italic;
   }
 }
 
@@ -160,97 +158,65 @@
 
 // PRESENTATION SECTION
 
-.presentation-title-container {
-  padding: 1% 0% 1% 2%;
-  margin-left: 1%;
-  grid-area: auto;
+.presentation-container {
+  background: linear-gradient(-45deg, #181819, #0c0c0c, #242525);
+  height: auto;
+  width: 95%;
+  margin-left: 1em;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 2em 2em 2em 2em;
+  color: white;
+  text-align: justify;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding: 15px;
+  box-shadow: 0 0 3px 2px rgb(0, 0, 0);
 
-  .grey-background {
-    background-color: #f2f2f2;
-    width: 81%;
-    position: absolute;
-    height: 10.5em;
-    border-radius: 2em 2em 2em 2em;
-
-    .title {
-      font-size: 21px;
-      margin-left: 1em;
-      margin-top: 0.5em;
-      position: relative;
-    }
+  .presentation-title {
+    font-size: 18px;
+    margin-bottom: 10px;
   }
-  .presentation-container {
-    background: linear-gradient(-45deg, #181819, #0c0c0c, #242525);
-    height: 6.5em;
-    position: relative;
-    display: flex;
-    align-items: flex-start;
-    border-radius: 1em 1em 1em 1em;
-    margin-top: 3em;
-    margin-left: 1em;
-    padding: 3%;
-    width: 92%;
 
-    .presentation-title2 {
-      color: white;
-      font-size: 15px;
-      text-align: justify;
-      font-family: "Poppins", sans-serif;
-      font-weight: 400;
-      font-style: normal;
-    }
+  .presentation-title2 {
+    font-size: 15px;
   }
 }
-
 // TECHNICAL STACK
 
-.technical-container {
+.technical-text-container {
+  background: linear-gradient(-45deg, #181819, #0c0c0c, #242525);
+  height: auto;
+  width: 95%;
+  margin-left: 1em;
   margin-top: 1em;
-  padding: 1% 0% 1% 2%;
-  margin-left: 1%;
-  grid-area: auto;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 2em 2em 2em 2em;
+  color: white;
+  text-align: justify;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding: 15px;
+  box-shadow: 0 0 3px 2px rgb(0, 0, 0);
 
-  .grey-technical {
-    background-color: #f2f2f2;
-    width: 81%;
-    position: absolute;
-    border-radius: 2em 2em 2em 2em;
-    grid-area: 3 / 3 / 3;
-    height: 25em;
+  .technical-title {
+    font-size: 18px;
+    margin-bottom: 10px;
   }
 
-  .technical-text-container {
-    display: flex;
-    flex-direction: column;
-    background: linear-gradient(-45deg, #181819, #0c0c0c, #242525);
-    // background-image: url(../assets/bottom_night.jpg);
-    // background-repeat: no-repeat;
-    // background-size: cover;
-    display: flex;
-    align-items: flex-start;
-    border-radius: 1em 1em 1em 1em;
-    position: relative;
-    color: white;
-    text-align: justify;
-    margin-top: 1em;
-    margin-left: 1em;
-    padding: 3%;
-    width: 92%;
-    height: auto;
-
-    .technical-title {
-      font-size: 18px;
-      margin-bottom: 1%;
-    }
-
-    .technical-text {
-      font-size: 15px;
-      margin-bottom: 1em;
-    }
+  .technical-text {
+    font-size: 15px;
+    margin-bottom: 19px;
   }
 }
 
 // STACK
+
 .stack-container {
   grid-area: 1 / 1 / 3;
   height: auto;
@@ -282,6 +248,9 @@
   }
   .mysql {
     background-image: url(../assets/stack/mysql.png);
+  }
+  .postman {
+    background-image: url(../assets/stack/postman.png);
   }
 }
 

@@ -1,8 +1,8 @@
 import NavBar from "../components/NavBar";
 import HomeSection from "../components/HomeSection";
 import PresentationSection from "../components/PresentationSection";
-import TechnicalStack from "../components/TechnicalStack";
 import StackImages from "../components/StackImages";
+import TechnicalSkills from "../components/TechnicalSkills";
 
 export default function Home() {
   return (
@@ -11,7 +11,7 @@ export default function Home() {
       <HomeSection />
       <div className="grid-container">
         <PresentationSection />
-        <TechnicalStack />
+        <TechnicalSkills />
         <StackImages />
       </div>
 
