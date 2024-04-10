@@ -54,7 +54,7 @@
   height: 50px;
 }
 * .home-link.active {
-  background-color: #f2f2f2;
+  background-color: #dbd6d6;
   background-image: url("../assets/home2.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -67,7 +67,7 @@
   height: 50px;
 }
 * .presentation-link.active {
-  background-color: #f2f2f2;
+  background-color: #dbd6d6;
   background-image: url("../assets/user.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -80,7 +80,7 @@
   height: 50px;
 }
 * .projects-link.active {
-  background-color: #f2f2f2;
+  background-color: #dbd6d6;
   background-image: url("../assets/project.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -93,7 +93,7 @@
   height: 50px;
 }
 * .contact-link.active {
-  background-color: #f2f2f2;
+  background-color: #dbd6d6;
   background-image: url("../assets/phone.png");
   background-size: contain;
   background-repeat: no-repeat;
