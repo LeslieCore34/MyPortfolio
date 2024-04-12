@@ -15,31 +15,33 @@ export default function NavBar() {
   }, []);
 
   return (
-    <div className="NavBar-Container">
-      <div className={`Home${menuSize ? " active" : ""}`}>
-        {menuSize ? (
-          <img
-            className="Folder-image"
-            src="./src/assets/folder.png"
-            alt="Image d'accueil"
-          />
-        ) : (
-          "Home"
-        )}
+    <nav className="NavBar">
+      <div className="NavBar-Container">
+        <a
+          href="#section-home"
+          className={`home-link link ${menuSize ? "active" : ""}`}
+        >
+          {menuSize ? null : "Home"}
+        </a>
+        <a
+          href="#section-presentation"
+          className={`presentation-link link ${menuSize ? "active" : ""}`}
+        >
+          {menuSize ? null : "Presentation"}
+        </a>
+        <a
+          href="#section-projects"
+          className={`projects-link link ${menuSize ? "active" : ""}`}
+        >
+          {menuSize ? null : "Projects"}
+        </a>
+        <a
+          href="#section-contact"
+          className={`contact-link link ${menuSize ? "active" : ""}`}
+        >
+          {menuSize ? null : "Contact"}
+        </a>
       </div>
-      <div className={`Presentation${menuSize ? " active" : ""}`}>
-        {menuSize ? (
-          <img
-            className="Avatar"
-            src="./scr/assets/girl-dynamic-gradient.png"
-            alt="Avatar"
-          />
-        ) : (
-          "Presentation"
-        )}
-      </div>
-      <div>Projects</div>
-      <div>Contact</div>
-    </div>
+    </nav>
   );
 }
