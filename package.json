@@ -2,12 +2,23 @@
   "name": "myportfolio",
   "version": "1.0.0",
   "description": "portfolio",
-    
   "main": "index.js",
   "scripts": {
-    "dev": "npm run dev --prefix frontend",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "db:migrate": "cd ./backend && node migrate.js",
+    "db:seed": "cd ./backend && node seed.js",
+    "dev": "cross-env-shell 'concurrently -c green,yellow -t \"HH:mm:ss\" -p \"{name} {time}\" \"npm:dev-*\"'",
+    "dev-front": "cross-env-shell \"cd ./frontend && npm run dev\"",
+    "dev-back": "cross-env-shell \"cd ./backend && npm run dev\""
   },
-  "author": "",
-  "license": "ISC"
+  "author": "leslie",
+  "license": "ISC",
+  "dependencies": {
+    "init": "^0.1.2",
+    "npm": "^10.5.2"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "cross-env": "^7.0.3"
+  }
 }
