@@ -1,26 +1,27 @@
-import { useEffect, useState } from "react";
+import PropTypes from "prop-types";
 
-export default function HomeSection() {
-  const [isShown, setIsShown] = useState(false);
-
-  useEffect(() => {
-    setTimeout(() => setIsShown(true), 1000); // Délai de 1 seconde avant l'apparition
-  }, []);
+export default function HomeSection({ menuOpen }) {
+  console.log(menuOpen);
   return (
     <>
-      <div id="section-home" className="home">
-        <h1>Leslie ABAJOLI</h1>
-        <p className="fullstack"> FULLSTACK DEVELOPER</p>
-        <p
-          className="welcome"
-          style={{
-            opacity: isShown ? 1 : 0,
-            transition: "opacity 1s ease-in-out",
-          }}
-        >
-          Welcome
+      <section
+        id="section-home"
+        className={`home ${menuOpen ? "menu-active" : ""}`}
+      >
+        <h1 className="fullstack">FULLSTACK DEVELOPER</h1>
+        <p className="name"> Leslie</p>
+        <p className="surname">ABAJOLI</p>
+
+        <p className="container-social">
+          <p className="github "></p>
+          <p className="linkedin social-link"></p>
+          <p className="email social-link"></p>
         </p>
-      </div>
+      </section>
     </>
   );
 }
+
+HomeSection.propTypes = {
+  menuOpen: PropTypes.bool.isRequired,
+};

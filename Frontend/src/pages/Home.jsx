@@ -6,12 +6,15 @@ import TechnicalSkills from "../components/TechnicalSkills";
 import StreetArt from "../components/StreetArt";
 import Contact from "../components/Contact";
 import Eshop from "../components/Eshop";
+import { useState } from "react";
 
 export default function Home() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <>
-      <NavBar />
-      <HomeSection />
+      <NavBar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+      <HomeSection menuOpen={menuOpen} />
       <div className="grid-container">
         <PresentationSection />
         <TechnicalSkills />

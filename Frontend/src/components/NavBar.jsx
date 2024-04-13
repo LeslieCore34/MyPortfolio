@@ -1,11 +1,14 @@
-import { useState } from "react";
+import PropTypes from "prop-types";
 
-export default function NavBar() {
-  const [menuOpen, setMenuOpen] = useState(false);
+export default function NavBar({ menuOpen, setMenuOpen }) {
+  // const [menuOpen, setMenuOpen] = useState(false);
 
-  const handleClick = () => {
-    setMenuOpen(!menuOpen);
+  const handleClick = (e) => {
+    e.stopPropagation();
+    setMenuOpen((prevMenuOpen) => !prevMenuOpen);
   };
+
+  console.log(menuOpen);
 
   return (
     <nav className="NavBar">
@@ -19,7 +22,7 @@ export default function NavBar() {
 
       <div className={`menu ${menuOpen ? "active" : "hidden"}`}>
         <div className="menu-container">
-          <a href="#section-home" className="section-menu">
+          <a href="#section-home" className="section">
             Home
           </a>
           <a href="#section-presentation" className="section-menu">
@@ -36,3 +39,8 @@ export default function NavBar() {
     </nav>
   );
 }
+
+NavBar.propTypes = {
+  menuOpen: PropTypes.bool.isRequired,
+  setMenuOpen: PropTypes.bool.isRequired,
+};
