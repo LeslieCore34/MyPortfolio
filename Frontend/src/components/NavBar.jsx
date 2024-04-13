@@ -6,7 +6,7 @@ export default function NavBar() {
   useEffect(() => {
     const handleResize = () => {
       const largeurEcran = window.innerWidth;
-      setMenuSize(largeurEcran < 768);
+      setMenuSize(largeurEcran < 600);
     };
     window.addEventListener("resize", handleResize);
     return () => {

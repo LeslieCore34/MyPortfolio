@@ -5,6 +5,8 @@ export default function Contact() {
       <div className="contact-details">
         <p>Email</p>
         <p>LinkedIn</p>
+        <p>GitHub</p>
+        <p>Design and Crafted by Leslie Abajoli</p>
       </div>
     </div>
   );

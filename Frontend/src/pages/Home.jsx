@@ -5,6 +5,7 @@ import StackImages from "../components/StackImages";
 import TechnicalSkills from "../components/TechnicalSkills";
 import StreetArt from "../components/StreetArt";
 import Contact from "../components/Contact";
+import Eshop from "../components/Eshop";
 
 export default function Home() {
   return (
@@ -16,7 +17,10 @@ export default function Home() {
         <TechnicalSkills />
         <StackImages />
       </div>
-      <StreetArt />
+      <div className="grid-container-projects">
+        <StreetArt />
+        <Eshop />
+      </div>
       <Contact />
     </>
   );
