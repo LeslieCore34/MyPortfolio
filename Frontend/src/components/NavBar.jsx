@@ -1,46 +1,37 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 export default function NavBar() {
-  const [menuSize, setMenuSize] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
-  useEffect(() => {
-    const handleResize = () => {
-      const largeurEcran = window.innerWidth;
-      setMenuSize(largeurEcran < 600);
-    };
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
+  const handleClick = () => {
+    setMenuOpen(!menuOpen);
+  };
 
   return (
     <nav className="NavBar">
-      <div className="NavBar-Container">
-        <a
-          href="#section-home"
-          className={`home-link link ${menuSize ? "active" : ""}`}
-        >
-          {menuSize ? null : "Home"}
-        </a>
-        <a
-          href="#section-presentation"
-          className={`presentation-link link ${menuSize ? "active" : ""}`}
-        >
-          {menuSize ? null : "Presentation"}
-        </a>
-        <a
-          href="#section-projects"
-          className={`projects-link link ${menuSize ? "active" : ""}`}
-        >
-          {menuSize ? null : "Projects"}
-        </a>
-        <a
-          href="#section-contact"
-          className={`contact-link link ${menuSize ? "active" : ""}`}
-        >
-          {menuSize ? null : "Contact"}
-        </a>
+      <div
+        className={`burger-menu ${menuOpen ? "active" : ""}`}
+        onClick={handleClick}
+      >
+        {" "}
+        <p className="burger-image"></p>{" "}
+      </div>
+
+      <div className={`menu ${menuOpen ? "active" : "hidden"}`}>
+        <div className="menu-container">
+          <a href="#section-home" className="section-menu">
+            Home
+          </a>
+          <a href="#section-presentation" className="section-menu">
+            Presentation
+          </a>
+          <a href="#section-projects" className="section-menu">
+            Projects
+          </a>
+          <a href="#section-contact" className="section-menu">
+            Contact
+          </a>
+        </div>
       </div>
     </nav>
   );

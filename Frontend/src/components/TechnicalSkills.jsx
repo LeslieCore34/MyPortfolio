@@ -2,6 +2,7 @@ export default function TechnicalSkills() {
   return (
     <>
       <div id="section-presentation" className=" technical-text-container">
+        <span className="bullet-point">&#8226;</span>
         <h1 className="technical-title">Database</h1>
         <p className="technical-text">
           Skilled in designing, manipulating, and querying databases to ensure

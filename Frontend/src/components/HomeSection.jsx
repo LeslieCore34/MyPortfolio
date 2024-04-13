@@ -9,6 +9,7 @@ export default function HomeSection() {
   return (
     <>
       <div id="section-home" className="home">
+        <h1>Leslie ABAJOLI</h1>
         <p className="fullstack"> FULLSTACK DEVELOPER</p>
         <p
           className="welcome"
