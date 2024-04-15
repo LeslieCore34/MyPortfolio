@@ -5,11 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "db:migrate": "cd ./backend && node migrate.js",
-    "db:seed": "cd ./backend && node seed.js",
     "dev": "cross-env-shell 'concurrently -c green,yellow -t \"HH:mm:ss\" -p \"{name} {time}\" \"npm:dev-*\"'",
-    "dev-front": "cross-env-shell \"cd ./frontend && npm run dev\"",
-    "dev-back": "cross-env-shell \"cd ./backend && npm run dev\""
+    "dev-front": "cross-env-shell \"cd ./frontend && npm run dev\""
   },
   "author": "leslie",
   "license": "ISC",
