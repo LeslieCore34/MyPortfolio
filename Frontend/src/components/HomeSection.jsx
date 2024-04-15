@@ -13,9 +13,20 @@ export default function HomeSection({ menuOpen }) {
         <p className="surname">ABAJOLI</p>
 
         <p className="container-social">
-          <p className="github "></p>
-          <p className="linkedin social-link"></p>
-          <p className="email social-link"></p>
+          <a
+            className="github "
+            target="blank"
+            href="https://github.com/LeslieCore34"
+          ></a>
+          <a
+            className="linkedin social-link"
+            target="blank"
+            href="https://www.linkedin.com/in/leslie-abajoli/"
+          ></a>
+          <a
+            className="email social-link"
+            href="mailto:leslie.abajoli1989@gmail.com"
+          ></a>
         </p>
       </section>
     </>

@@ -11,31 +11,35 @@
   background-color: #f8f8f8;
 }
 
+body,
+html {
+  overflow-x: hidden;
+}
+body {
+  background-color: #f8f8f8;
+}
+
 // NAVIGATION BAR MENU
 .NavBar {
-  background-color: #f8f8f8;
-  width: 100vw;
-  height: 60px;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
+  width: 100%;
+  overflow-x: hidden;
 
   .burger-menu {
     width: 100vw;
-    height: 50px;
-    margin-left: 5px;
+    height: 37px;
+    margin-left: 17px;
+    margin-top: 13px;
     cursor: pointer;
 
     .burger-image {
       background-image: url(../assets/menu-burger.png);
       background-size: contain;
       background-repeat: no-repeat;
-      width: 50px;
+      width: 35px;
       height: 40px;
-    }
-
-    &.active {
-      background-color: #f8f8f8;
     }
   }
 
@@ -43,12 +47,12 @@
     display: none;
 
     &.active {
+      margin-left: 18px;
       display: flex;
       flex-direction: column;
-      height: 50px;
       position: absolute;
-      z-index: 5;
-      margin-left: 8px;
+      width: 100%;
+      max-width: 150px;
 
       .menu-container {
         margin-top: 10px;
@@ -57,16 +61,18 @@
         width: 100vw;
         margin-left: 5px;
         font-size: 15px;
+        width: 100%;
+        overflow-x: hidden;
 
+        a {
+          color: black;
+          font-size: 17px;
+        }
         .section-menu {
-          margin-top: 5px;
+          margin-top: 11px;
         }
       }
     }
-  }
-
-  .hidden {
-    display: none;
   }
 }
 
@@ -78,9 +84,9 @@
   flex-direction: column;
   align-items: flex-start;
   margin-top: 5em;
-  // position: relative;
   margin-left: 1em;
-  width: 100vw;
+  // width: 100vw;
+  overflow-x: hidden;
 
   &.menu-active {
     margin-top: 180px;
@@ -88,7 +94,7 @@
 
   .fullstack {
     font-size: 30px;
-    margin-bottom: 10px;
+    margin-bottom: 28px;
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -118,7 +124,6 @@
     justify-content: space-between;
     width: 90%;
     height: 150px;
-    overflow: hidden;
   }
   .github {
     background-image: url(../assets/github.png);
@@ -151,11 +156,12 @@
   grid-template-rows: auto auto;
   overflow-x: hidden;
   margin: 1em;
+  margin-top: 7em;
 }
 
 // PRESENTATION SECTION
 
-.pres-container {
+.presentation-main-container {
   height: auto;
   width: 92%;
   margin-left: 17px;
@@ -163,7 +169,7 @@
   display: flex;
   flex-direction: column;
   text-align: justify;
-  padding: 15px;
+  padding: 0 15px 15px 15px;
 
   .presentation-title {
     font-size: 20px;
@@ -173,10 +179,12 @@
     font-style: italic;
   }
 }
-.presentation-container {
+.presentation-second-container {
   font-size: 15px;
 
-  .presentation-text {
+  .presentation-one,
+  .presentation-two,
+  .presentation-three {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -229,10 +237,6 @@
   display: grid;
   justify-content: center;
   align-items: center;
-  border-radius: 2em;
-  // margin: 1em;
-  // padding: 1em;
-  // box-shadow: 0 0 3px 2px #66717e;
 
   .container {
     background-repeat: no-repeat;
@@ -249,6 +253,9 @@
   }
   .javascript {
     background-image: url(../assets/stack/js.png);
+  }
+  .typescript {
+    background-image: url(../assets/stack/typescript.png);
   }
   .react {
     background-image: url(../assets/stack/react.png);
@@ -267,49 +274,90 @@
 // PROJECT
 .project-container {
   height: auto;
-  width: 90%;
+  // width: 90%;
+  width: fit-content;
   margin: 1em;
   padding: 2%;
   display: flex;
   flex-direction: column;
-  border-radius: 2em 2em 2em 2em;
   text-align: justify;
-  padding: 15px;
+  align-items: center;
+  border-radius: 2em 2em 2em 2em;
   box-shadow: 0 0 3px 2px #d4d4d4;
-  overflow-x: hidden;
+
+  .project-title {
+    margin-top: 10px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
 
   .project-image {
     background-image: url(../assets/street-art-devices2.png);
     background-size: contain;
     background-repeat: no-repeat;
-    height: 274px;
+    height: 240px;
+    width: 250px;
   }
+}
 
-  .project-description {
+.project-description {
+  font-size: 17px;
+  margin-bottom: 10px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  margin-bottom: 1em;
+}
+
+.functionnalities {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+  list-style: none;
+  padding-left: 20px;
+
+  li {
+    position: relative; // Position relative pour que la puce soit positionnée correctement
+    margin-bottom: 5px; // Espacement entre les éléments de liste
+
+    &::before {
+      content: "\2022"; // Caractère Unicode pour une puce ronde
+      position: absolute; // Position absolue par rapport à l'élément li
+      left: -15px; // Décaler la puce vers la gauche
+      color: #000; // Couleur de la puce
+    }
+  }
+}
+.project-use-description {
+  margin: 1em;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .how-to-use {
     margin-top: 1em;
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-  }
-
-  .project-use-description {
-    margin-top: 10px;
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
   }
 
   .link-streetart {
-    margin-left: 30%;
-    margin-top: 10px;
-    font-weight: 600;
-    font-size: 20px;
+    margin-top: 1em;
     color: black;
     font-family: "Roboto", sans-serif;
-    font-weight: 800;
+    font-weight: 500;
     font-style: normal;
+    font-size: 20px;
   }
 }
 
@@ -327,35 +375,34 @@ span {
 // CONTACT
 
 .contact-container {
-  // background-image: url(../assets/background7.jpg);
-  // background-color: #2b4162;
-  // background-repeat: no-repeat;
-  // background-size: cover;
-  // box-shadow: inset 0 0 3px 2px rgb(0, 0, 0);
   height: 100px;
-  // border-radius: 1em;
-  // margin: 1em;
-  color: black;
-  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  // box-shadow: 0 0 3px 2px #66717e;
-  background-color: #f8f8f8;
 
   .contact-title {
-    margin-left: 34%;
-    padding-top: 10px;
-    font-size: 25px;
+    font-size: 20px;
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-style: normal;
   }
 
   .contact-details {
+    font-size: 15px;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
+  .signature {
+    font-size: 14px;
   }
 }
 

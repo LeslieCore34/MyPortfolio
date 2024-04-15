@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 * {
@@ -9,40 +10,46 @@
   background-color: #f8f8f8;
 }
 
-.NavBar {
+body,
+html {
+  overflow-x: hidden;
+}
+
+body {
   background-color: #f8f8f8;
-  width: 100vw;
-  height: 60px;
+}
+
+.NavBar {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
+  width: 100%;
+  overflow-x: hidden;
 }
 .NavBar .burger-menu {
   width: 100vw;
-  height: 50px;
-  margin-left: 5px;
+  height: 37px;
+  margin-left: 17px;
+  margin-top: 13px;
   cursor: pointer;
 }
 .NavBar .burger-menu .burger-image {
   background-image: url(../assets/menu-burger.png);
   background-size: contain;
   background-repeat: no-repeat;
-  width: 50px;
+  width: 35px;
   height: 40px;
-}
-.NavBar .burger-menu.active {
-  background-color: #f8f8f8;
 }
 .NavBar .menu {
   display: none;
 }
 .NavBar .menu.active {
+  margin-left: 18px;
   display: flex;
   flex-direction: column;
-  height: 50px;
   position: absolute;
-  z-index: 5;
-  margin-left: 8px;
+  width: 100%;
+  max-width: 150px;
 }
 .NavBar .menu.active .menu-container {
   margin-top: 10px;
@@ -51,12 +58,15 @@
   width: 100vw;
   margin-left: 5px;
   font-size: 15px;
+  width: 100%;
+  overflow-x: hidden;
+}
+.NavBar .menu.active .menu-container a {
+  color: black;
+  font-size: 17px;
 }
 .NavBar .menu.active .menu-container .section-menu {
-  margin-top: 5px;
-}
-.NavBar .hidden {
-  display: none;
+  margin-top: 11px;
 }
 
 .home {
@@ -67,14 +77,14 @@
   align-items: flex-start;
   margin-top: 5em;
   margin-left: 1em;
-  width: 100vw;
+  overflow-x: hidden;
 }
 .home.menu-active {
   margin-top: 180px;
 }
 .home .fullstack {
   font-size: 30px;
-  margin-bottom: 10px;
+  margin-bottom: 28px;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -101,7 +111,6 @@
   justify-content: space-between;
   width: 90%;
   height: 150px;
-  overflow: hidden;
 }
 .home .github {
   background-image: url(../assets/github.png);
@@ -131,9 +140,10 @@
   grid-template-rows: auto auto;
   overflow-x: hidden;
   margin: 1em;
+  margin-top: 7em;
 }
 
-.pres-container {
+.presentation-main-container {
   height: auto;
   width: 92%;
   margin-left: 17px;
@@ -141,9 +151,9 @@
   display: flex;
   flex-direction: column;
   text-align: justify;
-  padding: 15px;
+  padding: 0 15px 15px 15px;
 }
-.pres-container .presentation-title {
+.presentation-main-container .presentation-title {
   font-size: 20px;
   margin-bottom: 10px;
   font-family: "Roboto", sans-serif;
@@ -151,10 +161,12 @@
   font-style: italic;
 }
 
-.presentation-container {
+.presentation-second-container {
   font-size: 15px;
 }
-.presentation-container .presentation-text {
+.presentation-second-container .presentation-one,
+.presentation-second-container .presentation-two,
+.presentation-second-container .presentation-three {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -200,7 +212,6 @@
   display: grid;
   justify-content: center;
   align-items: center;
-  border-radius: 2em;
 }
 .stack-container .container {
   background-repeat: no-repeat;
@@ -217,6 +228,9 @@
 .stack-container .javascript {
   background-image: url(../assets/stack/js.png);
 }
+.stack-container .typescript {
+  background-image: url(../assets/stack/typescript.png);
+}
 .stack-container .react {
   background-image: url(../assets/stack/react.png);
 }
@@ -232,46 +246,86 @@
 
 .project-container {
   height: auto;
-  width: 90%;
+  width: -moz-fit-content;
+  width: fit-content;
   margin: 1em;
   padding: 2%;
   display: flex;
   flex-direction: column;
-  border-radius: 2em 2em 2em 2em;
   text-align: justify;
-  padding: 15px;
+  align-items: center;
+  border-radius: 2em 2em 2em 2em;
   box-shadow: 0 0 3px 2px #d4d4d4;
-  overflow-x: hidden;
+}
+.project-container .project-title {
+  margin-top: 10px;
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
 }
 .project-container .project-image {
   background-image: url(../assets/street-art-devices2.png);
   background-size: contain;
   background-repeat: no-repeat;
-  height: 274px;
+  height: 240px;
+  width: 250px;
 }
-.project-container .project-description {
+
+.project-description {
+  font-size: 17px;
+  margin-bottom: 10px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  margin-bottom: 1em;
+}
+
+.functionnalities {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+  list-style: none;
+  padding-left: 20px;
+}
+.functionnalities li {
+  position: relative;
+  margin-bottom: 5px;
+}
+.functionnalities li::before {
+  content: "•";
+  position: absolute;
+  left: -15px;
+  color: #000;
+}
+
+.project-use-description {
+  margin: 1em;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.project-use-description .how-to-use {
   margin-top: 1em;
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
 }
-.project-container .project-use-description {
-  margin-top: 10px;
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-.project-container .link-streetart {
-  margin-left: 30%;
-  margin-top: 10px;
-  font-weight: 600;
-  font-size: 20px;
+.project-use-description .link-streetart {
+  margin-top: 1em;
   color: black;
   font-family: "Roboto", sans-serif;
-  font-weight: 800;
+  font-weight: 500;
   font-style: normal;
+  font-size: 20px;
 }
 
 .grid-container-projects {
@@ -288,25 +342,31 @@ span {
 
 .contact-container {
   height: 100px;
-  color: black;
-  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  background-color: #f8f8f8;
 }
 .contact-container .contact-title {
-  margin-left: 34%;
-  padding-top: 10px;
-  font-size: 25px;
+  font-size: 20px;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-style: normal;
 }
 .contact-container .contact-details {
+  font-size: 15px;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   margin-top: 1em;
+  margin-bottom: 1em;
+}
+.contact-container .signature {
+  font-size: 14px;
 }
 
 @media screen and (min-width: 400px) {
