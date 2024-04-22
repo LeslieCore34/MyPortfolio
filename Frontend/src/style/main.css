@@ -355,6 +355,7 @@ span {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  margin-bottom: 10px;
 }
 .contact-container .contact-title {
   font-size: 20px;
@@ -368,8 +369,11 @@ span {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin-top: 2em;
+}
+.contact-container .contact-link {
+  color: black;
+  cursor: pointer;
 }
 .contact-container .signature {
   font-size: 14px;
@@ -509,10 +513,16 @@ span {
     overflow-x: hidden;
   }
   .project-use-description {
-    width: 80%;
+    width: 75%;
+  }
+  .project-container {
+    margin: 3em;
   }
   .functionnalities {
     margin-left: 5%;
+  }
+  .contact-details {
+    margin-bottom: 10px;
   }
 }
 @media screen and (min-width: 900px) {
