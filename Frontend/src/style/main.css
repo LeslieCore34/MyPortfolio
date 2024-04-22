@@ -71,7 +71,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-top: 5em;
+  margin-top: 11em;
   margin-left: 5%;
 }
 .home.menu-active {
@@ -377,6 +377,14 @@ span {
 }
 
 @media screen and (min-width: 400px) {
+  .home {
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 13em;
+    margin-left: 5%;
+  }
   .grid-container {
     margin-top: 5em;
   }
@@ -401,14 +409,45 @@ span {
   }
 }
 @media screen and (min-width: 600px) {
-  .NavBar-Container {
-    height: 34px;
+  .NavBar {
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .NavBar .burger-menu {
+    display: none;
+  }
+  .NavBar .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .NavBar .menu .menu-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 10px;
+  }
+  .NavBar .menu .menu-container a {
+    color: black;
+    font-size: 17px;
+    text-align: center;
+    flex-grow: 1;
+  }
+  .NavBar .menu .menu-container .section-menu {
+    margin-top: 10px;
+  }
+  .NavBar .menu .menu-container .section {
+    margin-top: 10px;
   }
   .home {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 240px;
+    height: 380px;
   }
   .home .container-social {
     display: flex;
@@ -510,7 +549,7 @@ span {
 }
 @media screen and (min-width: 1200px) {
   .home {
-    height: 329px;
+    height: 388px;
   }
   .home .fullstack {
     font-size: 48px;

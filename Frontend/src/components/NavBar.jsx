@@ -1,11 +1,25 @@
 import PropTypes from "prop-types";
+import { useEffect } from "react";
 
 export default function NavBar({ menuOpen, setMenuOpen }) {
-  // const [menuOpen, setMenuOpen] = useState(false);
+  const handleResize = () => {
+    if (window.innerWidth >= 600 && menuOpen) {
+      setMenuOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, [menuOpen]);
 
   const handleClick = (e) => {
-    e.stopPropagation();
-    setMenuOpen((prevMenuOpen) => !prevMenuOpen);
+    if (window.innerWidth < 600) {
+      e.stopPropagation();
+      setMenuOpen((prevMenuOpen) => !prevMenuOpen);
+    }
   };
 
   console.log(menuOpen);
@@ -20,7 +34,7 @@ export default function NavBar({ menuOpen, setMenuOpen }) {
         <p className="burger-image"></p>{" "}
       </div>
 
-      <div className={`menu ${menuOpen ? "active" : "hidden"}`}>
+      <div className={`menu ${menuOpen ? "active" : "large"}`}>
         <div className="menu-container">
           <a href="#section-home" className="section">
             Home
