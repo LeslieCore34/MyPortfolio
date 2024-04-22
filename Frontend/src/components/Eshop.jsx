@@ -3,25 +3,42 @@ import { Link } from "react-router-dom";
 export default function Eshop() {
   return (
     <div className="project-container" id="section-projects">
-      <div className="project-image"> </div>
-      <p className="project-description">
-        <span>Eshop</span> is a project I am currently developping and still in
-        process. It allows me to practice skills and to gain more skills. This
-        web application features a user interface built with React and styled
-        using SCSS. We implemented a REST API using the Express framework and
-        Node.js. The database was created using MySQL.
-      </p>
-      <p className="project-use-description">
-        You can browse through the articles and almost purchase them !
-      </p>
+      <h1 className="project-title">E-shop</h1>
+      <div className="image-container">
+        <div className="project-image"></div>
+      </div>
 
-      <Link
-        className="link-streetart"
-        to="https://street-art-hunter.laloupe-1.wilders.dev/map"
-        target="_blank"
-      >
-        Enjoy window shopping!
-      </Link>
+      <div className="list-container">
+        <h2 className="project-description">Project description :</h2>
+
+        <ul className="functionnalities">
+          <li>Multiple products pages</li>
+          <li>Stripe for (fake) payment</li>
+          <li>Secured authentication with Tokens</li>
+          <li>Password stored using bcrypt</li>
+          <li>Download of images in database</li>
+          <li>Relational Database with MySQL</li>
+          <li>MVC architecture</li>
+        </ul>
+        <div className="project-use-description">
+          <p>
+            <span>Eshop</span> is a project I am currently developping. This web
+            application features a user interface built with React and styled
+            using SCSS. I implemented a REST API using the Express framework and
+            Node.js.
+            <p className="how-to-use">
+              You can browse through the articles and (almost) purchase them !
+            </p>
+          </p>
+          <Link
+            className="link-eshop"
+            to="https://github.com/LeslieCore34/Eshop"
+            target="_blank"
+          >
+            Checkout my code!
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }
