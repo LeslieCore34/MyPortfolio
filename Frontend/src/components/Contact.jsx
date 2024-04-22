@@ -3,12 +3,26 @@ export default function Contact() {
     <div className="contact-container" id="section-contact">
       <h1 className="contact-title">CONTACT</h1>
       <div className="contact-details">
-        <p>Email </p>
-        <p>LinkedIn</p>
-        <p>GitHub</p>
+        <a className="contact-link" href="mailto:leslie.abajoli1989@gmail.com">
+          Email
+        </a>
+        <a
+          className="contact-link"
+          target="blank"
+          href="https://www.linkedin.com/in/leslie-abajoli/"
+        >
+          Linkedin
+        </a>
+        <a
+          className="contact-link"
+          target="blank"
+          href="https://github.com/LeslieCore34"
+        >
+          GitHub
+        </a>
       </div>
       <div className="signature">
-        <p>Design and Crafted by Leslie Abajoli</p>
+        <p>Designed and Crafted by Leslie Abajoli</p>
       </div>
     </div>
   );
