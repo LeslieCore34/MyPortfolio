@@ -525,8 +525,8 @@ span {
   .project-use-description {
     width: 75%;
   }
-  .project-use-description .description-text-project {
-    height: 140px;
+  .description-text-project {
+    height: 215px;
   }
   .project-container {
     margin: 3em;
