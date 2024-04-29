@@ -5,7 +5,7 @@ export default function Eshop() {
     <div className="project-container" id="section-projects">
       <h1 className="project-title">E-shop</h1>
       <div className="image-container">
-        <div className="project-image"></div>
+        <div className="project-image-eshop"></div>
       </div>
 
       <div className="list-container">
@@ -21,7 +21,7 @@ export default function Eshop() {
           <li>MVC architecture</li>
         </ul>
         <div className="project-use-description">
-          <p>
+          <p className="description-text-project">
             <span>Eshop</span> is a project I am currently developping. This web
             application features a user interface built with React and styled
             using SCSS. I implemented a REST API using the Express framework and

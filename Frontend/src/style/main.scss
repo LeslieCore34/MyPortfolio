@@ -116,7 +116,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 90%;
+    width: 50%;
     height: 150px;
   }
 
@@ -303,6 +303,13 @@ body {
     height: 210px;
     width: 210px;
   }
+  .project-image-eshop {
+    background-image: url(../assets/Eshop.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 210px;
+    width: 210px;
+  }
 }
 
 .list-container {
@@ -458,6 +465,10 @@ span {
       height: 247px;
       width: 290px;
     }
+    .project-image-eshop {
+      height: 247px;
+      width: 290px;
+    }
   }
 }
 
@@ -505,11 +516,12 @@ span {
   .home {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    // align-items: center;
     height: 380px;
+    margin-left: 30%;
     .container-social {
       display: flex;
-      justify-content: space-around;
+      // justify-content: space-around;
       flex-direction: row;
       align-items: center;
     }
@@ -580,6 +592,9 @@ span {
 
   .project-use-description {
     width: 75%;
+    .description-text-project {
+      height: 140px;
+    }
   }
 
   .project-container {
@@ -627,6 +642,10 @@ span {
     font-size: 20px;
   }
 
+  .description-text-project {
+    height: 212px;
+  }
+
   .functionnalities {
     margin-left: 0%;
   }
@@ -634,7 +653,8 @@ span {
 
 @media screen and (min-width: 1200px) {
   .home {
-    height: 388px;
+    height: 560px;
+    margin-top: 17em;
   }
   .home .fullstack {
     font-size: 48px;
@@ -650,6 +670,7 @@ span {
 
   .project-container {
     padding: 0;
+    margin: 6em;
   }
 
   .presentation-second-container {
@@ -659,7 +680,9 @@ span {
 
   .home .container-social {
     display: flex;
-    justify-content: space-evenly;
+    // justify-content: space-evenly;
+    margin-top: 5em;
+    width: 40%;
   }
 
   .project-container .project-title {
@@ -689,6 +712,9 @@ span {
 
   .project-use-description {
     margin-top: 2em;
+    .description-text-project {
+      height: 140px;
+    }
   }
 
   .project-use-description .link-eshop {

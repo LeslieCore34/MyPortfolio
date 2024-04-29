@@ -19,7 +19,7 @@ export default function StreetArt() {
           <li>MVC architecture</li>
         </ul>
         <div className="project-use-description">
-          <p>
+          <p className="description-text-project">
             <span>Street-Art Hunters</span> is a project I developed with two
             classmates during my studies. <br />
             <p className="how-to-use">
