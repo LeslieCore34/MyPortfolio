@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "portfolio",
   "main": "index.js",
-  "homepage": "https://github.com/LeslieCore34/MyPortfolio.git",
+  "homepage": "https://github.com/LeslieCore34/myportfolio.git",
   "scripts": {
-    "deploy": "gh-pages -d build",
+    "deploy": "cd frontend && gh-pages -d build",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "cross-env-shell 'concurrently -c green,yellow -t \"HH:mm:ss\" -p \"{name} {time}\" \"npm:dev-*\"'",
     "dev-front": "cross-env-shell \"cd ./frontend && npm run dev\""
@@ -13,7 +13,6 @@
   "author": "leslie",
   "license": "ISC",
   "dependencies": {
-    "init": "^0.1.2",
     "npm": "^10.5.2"
   },
   "devDependencies": {
