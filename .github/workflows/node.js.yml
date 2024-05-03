@@ -24,7 +24,7 @@ jobs:
 
       - run: npm ci
 
-      - name: Change to frontend directory
+      - name: Change to Frontend directory
         run: |
           cd Frontend
       - run: npm install
