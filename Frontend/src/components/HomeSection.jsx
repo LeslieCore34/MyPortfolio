@@ -8,7 +8,7 @@ export default function HomeSection({ menuOpen }) {
         id="section-home"
         className={`home ${menuOpen ? "menu-active" : ""}`}
       >
-        <h1 className="fullstack">FULLSTACK DEVELOPER</h1>
+        <h1 className="fullstack">FULLSTACK DEVELOPER test</h1>
         <p className="name"> Leslie</p>
         <p className="surname">ABAJOLI</p>
 
