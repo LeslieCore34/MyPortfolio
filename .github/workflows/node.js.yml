@@ -24,11 +24,15 @@ jobs:
 
       - run: npm ci
 
-      - name: Change to Frontend directory
+      - name: Install dependencies
         run: |
           cd Frontend
-      - run: npm install
-      - run: npm run build --if-present
+          npm install
+
+      - name: Build the project
+        run: |
+          cd Frontend
+          npm run build
 
       - name: Deploy with gh-pages
         run: |
