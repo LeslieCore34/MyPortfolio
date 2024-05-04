@@ -2,7 +2,6 @@ import PropTypes from "prop-types";
 import Typewriter from "./Typewritter";
 
 export default function HomeSection({ menuOpen }) {
-  console.log(menuOpen);
   return (
     <>
       <section

@@ -7,7 +7,6 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
-  background-color: #f8f8f8;
 }
 
 body,
@@ -71,7 +70,7 @@ body {
 }
 
 .home {
-  height: 270px;
+  height: 282px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -158,7 +157,7 @@ body {
   grid-template-rows: auto auto;
   overflow-x: hidden;
   margin: 1em;
-  margin-top: 10em;
+  margin-top: 7em;
 }
 
 .presentation-main-container {
@@ -176,7 +175,6 @@ body {
   margin-bottom: 10px;
   font-family: "Roboto", sans-serif;
   font-weight: 900;
-  font-style: italic;
 }
 
 .presentation-second-container {
@@ -418,17 +416,11 @@ span {
 
 @media screen and (min-width: 400px) {
   .home {
-    height: 270px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-top: 13em;
-    margin-left: 5%;
   }
-  .grid-container {
-    margin-top: 5em;
-  }
-  .project-use-description {
+  .grid-container .project-use-description {
     width: 79%;
   }
   .project-container .project-image {
@@ -437,9 +429,6 @@ span {
   }
 }
 @media screen and (min-width: 500px) {
-  .grid-container {
-    margin-top: 5em;
-  }
   .project-use-description {
     width: 70%;
   }
@@ -477,6 +466,10 @@ span {
   }
   .NavBar .menu .menu-container a {
     color: black;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
     font-size: 17px;
     text-align: center;
     flex-grow: 1;
@@ -490,8 +483,9 @@ span {
   .home {
     display: flex;
     flex-direction: column;
-    height: 380px;
+    height: 340px;
     margin-left: 30%;
+    margin-bottom: 7em;
   }
   .home .container-social {
     display: flex;
@@ -514,8 +508,7 @@ span {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin-top: 3em;
-    margin-bottom: 20px;
+    margin-bottom: 2em;
   }
   .stack-container .container {
     width: 50px;
@@ -527,6 +520,9 @@ span {
     padding: 2%;
     padding: 15px;
   }
+  .presentation-second-container {
+    margin-top: 30px;
+  }
   .technical-text-container {
     margin-left: 17px;
     margin-top: 1em;
@@ -536,7 +532,7 @@ span {
   .technical-text-container .technical-title {
     font-size: 18px;
     margin-bottom: 10px;
-    font-weight: 700;
+    font-weight: 500;
   }
   .technical-text-container .technical-text {
     font-size: 15px;
@@ -568,6 +564,9 @@ span {
   }
 }
 @media screen and (min-width: 900px) {
+  .home {
+    margin-left: 33%;
+  }
   .home .fullstack {
     font-size: 42px;
   }
@@ -604,8 +603,9 @@ span {
 }
 @media screen and (min-width: 1200px) {
   .home {
-    height: 560px;
-    margin-top: 17em;
+    height: 470px;
+    margin-left: 33%;
+    margin-bottom: 1em;
   }
   .home .fullstack {
     font-size: 48px;
@@ -628,6 +628,12 @@ span {
     display: flex;
     margin-top: 5em;
     width: 40%;
+  }
+  .technical-text {
+    line-height: 25px;
+  }
+  .presentation-second-container {
+    margin-top: 35px;
   }
   .project-container .project-title {
     margin-top: 10px;
