@@ -4,6 +4,26 @@ export default function StreetArt() {
   return (
     <div className="project-container" id="section-projects">
       <h1 className="project-title">Street-art-Hunters</h1>
+      <div className="project-use-description">
+        <p className="description-text-project">
+          <span>Street-Art Hunters</span> is a project I developed with two
+          classmates during my studies. <br />
+          <p className="how-to-use">
+            Use your camera to capture city street art, and accumulate points
+            for each discovery!
+          </p>
+        </p>
+      </div>
+      <div>Technologies</div>
+      <ul className="techno-list">
+        <li>React</li>
+        <li>Node.js</li>
+        <li>Express.js</li>
+        <li>REST API</li>
+        <li>Google Maps</li>
+        <li>Live location</li>
+        <li> GitHub Actions</li>
+      </ul>
       <div className="image-container">
         <div className="project-image"></div>
       </div>
@@ -18,23 +38,14 @@ export default function StreetArt() {
           <li>Relational Database with MySQL</li>
           <li>MVC architecture</li>
         </ul>
-        <div className="project-use-description">
-          <p className="description-text-project">
-            <span>Street-Art Hunters</span> is a project I developed with two
-            classmates during my studies. <br />
-            <p className="how-to-use">
-              Use your camera to capture city street art, and accumulate points
-              for each discovery!
-            </p>
-          </p>
-          <Link
-            className="link-streetart"
-            to="https://street-art-hunter.laloupe-1.wilders.dev/map"
-            target="_blank"
-          >
-            Start to play!
-          </Link>
-        </div>
+
+        <Link
+          className="link-streetart"
+          to="https://street-art-hunter.laloupe-1.wilders.dev/map"
+          target="_blank"
+        >
+          Start to play!
+        </Link>
       </div>
     </div>
   );

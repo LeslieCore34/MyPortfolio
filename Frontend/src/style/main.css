@@ -30,7 +30,7 @@ body {
   width: 100vw;
   height: 37px;
   margin-left: 5%;
-  margin-top: 13px;
+  margin-top: 16px;
   cursor: pointer;
 }
 .NavBar .burger-menu .burger-image {
@@ -60,7 +60,11 @@ body {
 }
 .NavBar .menu.active .menu-container a {
   color: black;
-  font-size: 17px;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 15px;
 }
 .NavBar .menu.active .menu-container .section-menu {
   margin-top: 11px;
@@ -71,8 +75,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-top: 11em;
-  margin-left: 5%;
+  margin-top: 9em;
+  margin-left: 20%;
 }
 .home.menu-active {
   margin-top: 180px;
@@ -83,6 +87,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-style: normal;
+  color: black;
 }
 .home .name {
   font-size: 25px;
@@ -98,14 +103,28 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
+  margin-bottom: 29px;
 }
-.home .container-social {
-  margin-top: 4em;
+.home .container-for-animation {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+}
+.home .container-for-animation .arrow {
+  background-image: url(../assets/arrow.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 21px;
+  width: 11px;
+  margin-right: 10px;
+}
+.home .container-for-animation .moving-presentation {
+  height: 3px;
+}
+.home .container-social {
+  margin-top: 3em;
+  display: flex;
+  flex-direction: row;
   width: 50%;
-  height: 150px;
 }
 .home .github {
   background-image: url(../assets/github.png);
@@ -113,20 +132,24 @@ body {
   background-repeat: no-repeat;
   height: 37px;
   width: 37px;
+  margin-right: 20px;
 }
 .home .linkedin {
   background-image: url(../assets/linkedin.png);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 37px;
-  width: 37px;
+  height: 28px;
+  width: 28px;
+  margin-right: 20px;
+  margin-top: 4px;
 }
 .home .email {
   background-image: url(../assets/email.png);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 37px;
-  width: 37px;
+  height: 30px;
+  width: 30px;
+  margin-top: 4px;
 }
 
 .grid-container {
@@ -135,7 +158,7 @@ body {
   grid-template-rows: auto auto;
   overflow-x: hidden;
   margin: 1em;
-  margin-top: 7em;
+  margin-top: 10em;
 }
 
 .presentation-main-container {
@@ -244,6 +267,7 @@ body {
   grid-template-rows: auto;
   overflow-x: hidden;
   margin: 1em;
+  justify-items: center;
 }
 
 .project-container {
@@ -256,16 +280,32 @@ body {
   flex-direction: column;
   text-align: justify;
   align-items: center;
-  border-radius: 2em 2em 2em 2em;
-  box-shadow: 0 0 3px 2px #d4d4d4;
 }
 .project-container .project-title {
   margin-top: 10px;
   font-size: 20px;
   margin-bottom: 10px;
   font-family: "Roboto", sans-serif;
-  font-weight: 900;
+  font-weight: 500;
   font-style: normal;
+  color: white;
+  background-color: #0075c4;
+  width: 100%;
+}
+.project-container .project-use-description {
+  margin: 1em;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  height: 250px;
+}
+.project-container .project-use-description .how-to-use {
+  margin-top: 1em;
 }
 .project-container .project-image {
   background-image: url(../assets/street-art-devices2.png);
@@ -318,35 +358,24 @@ body {
   color: #000;
 }
 
-.project-use-description {
-  margin: 1em;
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.project-use-description .how-to-use {
-  margin-top: 1em;
-}
-.project-use-description .link-streetart {
+.link-eshop {
   margin-top: 1em;
   color: black;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-style: normal;
   font-size: 20px;
+  color: #efa00b;
 }
-.project-use-description .link-eshop {
+
+.link-streetart {
   margin-top: 1em;
   color: black;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-style: normal;
   font-size: 20px;
+  color: #efa00b;
 }
 
 span {

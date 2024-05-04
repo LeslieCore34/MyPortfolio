@@ -31,7 +31,7 @@ body {
     width: 100vw;
     height: 37px;
     margin-left: 5%;
-    margin-top: 13px;
+    margin-top: 16px;
     cursor: pointer;
 
     .burger-image {
@@ -63,7 +63,11 @@ body {
 
         a {
           color: black;
-          font-size: 17px;
+          font-family: "Montserrat", sans-serif;
+          font-optical-sizing: auto;
+          font-weight: 500;
+          font-style: normal;
+          font-size: 15px;
         }
         .section-menu {
           margin-top: 11px;
@@ -79,8 +83,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-top: 11em;
-  margin-left: 5%;
+  margin-top: 9em;
+  margin-left: 20%;
 
   &.menu-active {
     margin-top: 180px;
@@ -92,6 +96,7 @@ body {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-style: normal;
+    color: black;
   }
 
   .name {
@@ -109,15 +114,31 @@ body {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
+    margin-bottom: 29px;
+  }
+
+  .container-for-animation {
+    display: flex;
+    flex-direction: row;
+
+    .arrow {
+      background-image: url(../assets/arrow.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 21px;
+      width: 11px;
+      margin-right: 10px;
+    }
+    .moving-presentation {
+      height: 3px;
+    }
   }
 
   .container-social {
-    margin-top: 4em;
+    margin-top: 3em;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     width: 50%;
-    height: 150px;
   }
 
   .github {
@@ -126,22 +147,26 @@ body {
     background-repeat: no-repeat;
     height: 37px;
     width: 37px;
+    margin-right: 20px;
   }
 
   .linkedin {
     background-image: url(../assets/linkedin.png);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 37px;
-    width: 37px;
+    height: 28px;
+    width: 28px;
+    margin-right: 20px;
+    margin-top: 4px;
   }
 
   .email {
     background-image: url(../assets/email.png);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 37px;
-    width: 37px;
+    height: 30px;
+    width: 30px;
+    margin-top: 4px;
   }
 }
 
@@ -153,7 +178,7 @@ body {
   grid-template-rows: auto auto;
   overflow-x: hidden;
   margin: 1em;
-  margin-top: 7em;
+  margin-top: 10em;
 }
 
 .presentation-main-container {
@@ -274,7 +299,9 @@ body {
   grid-template-rows: auto;
   overflow-x: hidden;
   margin: 1em;
+  justify-items: center;
 }
+
 .project-container {
   height: auto;
   width: fit-content;
@@ -284,16 +311,34 @@ body {
   flex-direction: column;
   text-align: justify;
   align-items: center;
-  border-radius: 2em 2em 2em 2em;
-  box-shadow: 0 0 3px 2px #d4d4d4;
 
   .project-title {
     margin-top: 10px;
     font-size: 20px;
     margin-bottom: 10px;
     font-family: "Roboto", sans-serif;
-    font-weight: 900;
+    font-weight: 500;
     font-style: normal;
+    color: white;
+    background-color: #0075c4;
+    width: 100%;
+  }
+
+  .project-use-description {
+    margin: 1em;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 250px;
+
+    .how-to-use {
+      margin-top: 1em;
+    }
   }
 
   .project-image {
@@ -352,38 +397,24 @@ body {
   }
 }
 
-.project-use-description {
-  margin: 1em;
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
+.link-eshop {
+  margin-top: 1em;
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
   font-style: normal;
-  font-size: 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  font-size: 20px;
+  color: #efa00b;
+}
 
-  .how-to-use {
-    margin-top: 1em;
-  }
-
-  .link-streetart {
-    margin-top: 1em;
-    color: black;
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 20px;
-  }
-
-  .link-eshop {
-    margin-top: 1em;
-    color: black;
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 20px;
-  }
+.link-streetart {
+  margin-top: 1em;
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+  color: #efa00b;
 }
 
 span {

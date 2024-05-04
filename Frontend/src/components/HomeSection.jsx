@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import Typewriter from "./Typewritter";
 
 export default function HomeSection({ menuOpen }) {
   console.log(menuOpen);
@@ -8,10 +9,13 @@ export default function HomeSection({ menuOpen }) {
         id="section-home"
         className={`home ${menuOpen ? "menu-active" : ""}`}
       >
-        <h1 className="fullstack">FULLSTACK DEVELOPER test</h1>
+        <h1 className="fullstack">FULLSTACK DEVELOPER</h1>
         <p className="name"> Leslie</p>
         <p className="surname">ABAJOLI</p>
-
+        <div className="container-for-animation">
+          <p className="arrow"></p>
+          <Typewriter />
+        </div>
         <p className="container-social">
           <a
             className="github "
