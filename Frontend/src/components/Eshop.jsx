@@ -7,10 +7,31 @@ export default function Eshop() {
       <div className="image-container">
         <div className="project-image-eshop"></div>
       </div>
-
+      <div className="project-use-description">
+        <p className="description-text-project">
+          <span>Eshop</span> is a project I am currently developping. This web
+          application features a user interface built with React and styled
+          using SCSS. I implemented a REST API using the Express framework and
+          Node.js.
+          <p className="how-to-use">
+            You can browse through the articles and (almost) purchase them !
+          </p>
+        </p>
+      </div>
+      <div className="technologies-title">Technologies</div>
+      <div className="techno-list">
+        <ul>
+          <li>React</li>
+          <li>Node.js</li>
+          <li>Express.js</li>
+          <li>REST API</li>
+          <li>Google Maps</li>
+          <li>Live location</li>
+          <li> GitHub Actions</li>
+        </ul>
+      </div>
       <div className="list-container">
         <h2 className="project-description">Project description :</h2>
-
         <ul className="functionnalities">
           <li>Multiple products pages</li>
           <li>Stripe for (fake) payment</li>
@@ -20,24 +41,13 @@ export default function Eshop() {
           <li>Relational Database with MySQL</li>
           <li>MVC architecture</li>
         </ul>
-        <div className="project-use-description">
-          <p className="description-text-project">
-            <span>Eshop</span> is a project I am currently developping. This web
-            application features a user interface built with React and styled
-            using SCSS. I implemented a REST API using the Express framework and
-            Node.js.
-            <p className="how-to-use">
-              You can browse through the articles and (almost) purchase them !
-            </p>
-          </p>
-          <Link
-            className="link-eshop"
-            to="https://github.com/LeslieCore34/Eshop"
-            target="_blank"
-          >
-            Checkout my code!
-          </Link>
-        </div>
+        <Link
+          className="link-eshop"
+          to="https://github.com/LeslieCore34/Eshop"
+          target="_blank"
+        >
+          Checkout my code!
+        </Link>
       </div>
     </div>
   );
