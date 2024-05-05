@@ -1,12 +1,18 @@
+import presentationData from "../data/presentationData.json";
+import { useLanguageContext } from "../context/langageContext";
+
 /* eslint-disable react/no-unescaped-entities */
 export default function PresentationSection() {
+  const { language } = useLanguageContext();
+  const data = presentationData[language];
+
   return (
     <>
       <section
         id="section-presentation"
         className="presentation-main-container"
       >
-        <h1 className="presentation-title">Hi there !</h1>
+        <h1 className="presentation-title">{data["presentation-title"]}</h1>
         <p className="presentation-second-container">
           <p className="presentation-one">
             I graduated as a Web Developer in March 2024. . During my studies,

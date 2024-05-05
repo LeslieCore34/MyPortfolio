@@ -4,6 +4,9 @@ export default function Eshop() {
   return (
     <div className="project-container" id="section-projects">
       <h1 className="project-title">E-shop</h1>
+      <div className="image-container">
+        <div className="project-image-eshop"></div>
+      </div>
       <div className="project-use-description">
         <p className="description-text-project">
           <span>Eshop</span> is a project I am currently developping. This web
@@ -15,20 +18,18 @@ export default function Eshop() {
           </p>
         </p>
       </div>
-      <div>Technologies</div>
-      <ul className="techno-list">
-        <li>React</li>
-        <li>Node.js</li>
-        <li>Express.js</li>
-        <li>REST API</li>
-        <li>Google Maps</li>
-        <li>Live location</li>
-        <li> GitHub Actions</li>
-      </ul>
-      <div className="image-container">
-        <div className="project-image-eshop"></div>
+      <div className="technologies-title">Technologies</div>
+      <div className="techno-list">
+        <ul>
+          <li>React</li>
+          <li>Node.js</li>
+          <li>Express.js</li>
+          <li>REST API</li>
+          <li>Google Maps</li>
+          <li>Live location</li>
+          <li> GitHub Actions</li>
+        </ul>
       </div>
-
       <div className="list-container">
         <h2 className="project-description">Project description :</h2>
         <ul className="functionnalities">

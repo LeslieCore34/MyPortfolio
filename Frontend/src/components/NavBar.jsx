@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import { useEffect } from "react";
+import ButtonLanguage from "./ButtonLanguage";
 
 export default function NavBar({ menuOpen, setMenuOpen }) {
   const handleResize = () => {
@@ -21,8 +22,6 @@ export default function NavBar({ menuOpen, setMenuOpen }) {
       setMenuOpen((prevMenuOpen) => !prevMenuOpen);
     }
   };
-
-  console.log(menuOpen);
 
   return (
     <nav className="NavBar">
@@ -48,6 +47,7 @@ export default function NavBar({ menuOpen, setMenuOpen }) {
           <a href="#section-contact" className="section-menu">
             Contact
           </a>
+          <ButtonLanguage />
         </div>
       </div>
     </nav>

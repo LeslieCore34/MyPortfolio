@@ -20,6 +20,7 @@ export default function Home() {
         <TechnicalSkills />
         <StackImages />
       </div>
+      <div className="projects-intro">Projects</div>
       <div className="grid-container-projects">
         <StreetArt />
         <Eshop />
