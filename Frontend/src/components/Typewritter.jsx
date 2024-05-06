@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
 function Typewriter() {
-  const words = ["React", "Frontend", "Backend", "Database"];
+  const words = ["React", "Javascript", "Front-end", "Back-end", "Database"];
   const [part, setPart] = useState("");
   const [index, setIndex] = useState(0);
   const [offset, setOffset] = useState(0);

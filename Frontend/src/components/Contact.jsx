@@ -1,6 +1,6 @@
 export default function Contact() {
   return (
-    <div className="contact-container" id="section-contact">
+    <section className="contact-container" id="section-contact">
       <h1 className="contact-title">CONTACT</h1>
       <div className="contact-details">
         <a className="contact-link" href="mailto:leslie.abajoli1989@gmail.com">
@@ -24,6 +24,6 @@ export default function Contact() {
       <div className="signature">
         <p>Designed and Crafted by Leslie Abajoli</p>
       </div>
-    </div>
+    </section>
   );
 }

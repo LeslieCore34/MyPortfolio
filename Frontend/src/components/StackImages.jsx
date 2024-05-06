@@ -1,7 +1,7 @@
 export default function StackImages() {
   return (
     <>
-      <div className="stack-container">
+      <section className="stack-container">
         <div className="html container"></div>
         <div className="css container"></div>
         <div className="javascript container"></div>
@@ -10,7 +10,7 @@ export default function StackImages() {
         <div className="node container"></div>
         <div className="mysql container"></div>
         <div className="postman container"></div>
-      </div>
+      </section>
     </>
   );
 }

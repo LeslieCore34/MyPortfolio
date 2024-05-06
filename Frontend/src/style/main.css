@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -116,7 +117,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-style: normal;
-  color: black;
+  color: #03045e;
 }
 .home .name {
   font-size: 25px;
@@ -195,32 +196,33 @@ body {
   width: 92%;
   margin-left: 17px;
   margin-top: 5px;
+  padding: 0 15px 15px 15px;
   display: flex;
   flex-direction: column;
   text-align: justify;
-  padding: 0 15px 15px 15px;
 }
 .presentation-main-container .presentation-title {
   font-size: 20px;
   margin-bottom: 10px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 900;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #00388e;
 }
-
-.presentation-second-container {
+.presentation-main-container .presentation-second-container {
   font-size: 15px;
 }
-.presentation-second-container .presentation-one,
-.presentation-second-container .presentation-two,
-.presentation-second-container .presentation-three {
+.presentation-main-container .presentation-second-container .presentation-one,
+.presentation-main-container .presentation-second-container .presentation-two,
+.presentation-main-container .presentation-second-container .presentation-three {
+  margin-bottom: 12px;
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  margin-bottom: 12px;
 }
 
-.technical-text-container {
+.expertise-category-container {
   height: auto;
   width: 92%;
   margin-left: 17px;
@@ -230,19 +232,20 @@ body {
   flex-direction: column;
   text-align: justify;
 }
-.technical-text-container .bullet-point {
+.expertise-category-container .bullet-point-image {
   display: flex;
   flex-direction: row;
 }
-.technical-text-container .technical-title {
+.expertise-category-container .expertise-category-title {
   font-size: 20px;
   margin-bottom: 10px;
   margin-left: 20px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-style: normal;
+  color: #00388e;
 }
-.technical-text-container .technical-text {
+.expertise-category-container .technical-text {
   font-size: 15px;
   margin-bottom: 19px;
   font-family: "Montserrat", sans-serif;
@@ -298,7 +301,7 @@ body {
   justify-items: center;
 }
 
-.projects-intro {
+.projects-introduction-title {
   display: flex;
   justify-content: center;
   font-size: 30px;
@@ -307,7 +310,7 @@ body {
   font-weight: 700;
 }
 
-.project-container {
+.global-projects-container {
   height: auto;
   width: -moz-fit-content;
   width: fit-content;
@@ -318,20 +321,27 @@ body {
   text-align: justify;
   align-items: center;
 }
-.project-container .project-title {
-  margin-top: 10px;
-  font-size: 20px;
-  margin-bottom: 10px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  color: black;
-  width: 100%;
+.global-projects-container .project-title {
   display: flex;
   justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  width: 100%;
+  padding: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: white;
+  background-color: #03045e;
+  box-shadow: #ccc;
 }
-.project-container .project-use-description {
-  margin: 1em;
+.global-projects-container .project-image {
+  height: 220px;
+  width: 290px;
+}
+.global-projects-container .project-short-description {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -340,98 +350,85 @@ body {
   display: flex;
   flex-direction: column;
 }
-.project-container .project-use-description .how-to-use {
+.global-projects-container .project-short-description .how-to-use {
   margin-top: 1em;
 }
-
-.techno-list {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 15px;
+.global-projects-container .technology-list-container .technology-title {
   display: flex;
-  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  align-items: center;
-  width: 250px;
-  height: 250px;
-}
-
-.project-image {
-  background-image: url(../assets/street-art-devices2.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 210px;
-  width: 210px;
-}
-
-.project-image-eshop {
-  background-image: url(../assets/Eshop.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 210px;
-  width: 210px;
-}
-
-.list-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.list-container .project-description {
-  font-size: 17px;
+  font-size: 18px;
   margin-bottom: 10px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-style: normal;
   margin-bottom: 1em;
+  margin-top: 2em;
+  padding: 1px;
+  color: white;
+  background-color: #7b0063;
+  border-radius: 15px;
+  box-shadow: #ccc;
 }
-.list-container .functionnalities {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
+.global-projects-container .technology-list-container li {
+  position: relative;
+  margin-bottom: 5px;
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   font-size: 15px;
-  list-style: none;
-  padding-left: 20px;
 }
-.list-container .functionnalities li {
-  position: relative;
-  margin-bottom: 5px;
-}
-.list-container .functionnalities li::before {
+.global-projects-container .technology-list-container li::before {
   content: "•";
   position: absolute;
   left: -15px;
   color: #000;
 }
-
-.link-eshop {
-  margin-top: 1em;
-  color: black;
-  font-family: "Roboto", sans-serif;
+.global-projects-container .functionnalities-list-container .functionnalites-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-style: normal;
-  font-size: 20px;
-  color: #efa00b;
+  margin-bottom: 1em;
+  margin-top: 2em;
+  padding: 1px;
+  color: white;
+  background-color: #ed6a4a;
+  border-radius: 15px;
+  box-shadow: #ccc;
 }
-
-.link-streetart {
+.global-projects-container .functionnalities-list-container .functionalities {
+  display: flex;
+  flex-direction: column;
+}
+.global-projects-container .functionnalities-list-container li {
+  position: relative;
+  margin-bottom: 5px;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+}
+.global-projects-container .functionnalities-list-container li::before {
+  content: "•";
+  position: absolute;
+  left: -15px;
+  color: #000;
+}
+.global-projects-container .link {
   margin-top: 1em;
   color: black;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 20px;
-  color: #efa00b;
-}
-
-span {
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
+  font-style: normal;
+  font-size: 24px;
+  color: #03045e;
 }
 
 .contact-container {
@@ -446,9 +443,9 @@ span {
   margin-bottom: 10px;
 }
 .contact-container .contact-title {
-  font-size: 20px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
+  font-size: 22px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
   font-style: normal;
 }
 .contact-container .contact-details {
@@ -460,12 +457,14 @@ span {
   margin-top: 2em;
 }
 .contact-container .contact-link {
-  color: black;
+  color: #0000d1;
+  font-weight: bold;
   cursor: pointer;
 }
 .contact-container .signature {
   font-size: 14px;
   margin-top: 1em;
+  color: #03045e;
 }
 
 @media screen and (min-width: 400px) {

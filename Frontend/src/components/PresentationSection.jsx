@@ -13,7 +13,7 @@ export default function PresentationSection() {
         className="presentation-main-container"
       >
         <h1 className="presentation-title">{data["presentation-title"]}</h1>
-        <p className="presentation-second-container">
+        <div className="presentation-second-container">
           <p className="presentation-one">
             I graduated as a Web Developer in March 2024. . During my studies,
             I've built several projects, and since graduating, I've continued to
@@ -29,7 +29,7 @@ export default function PresentationSection() {
             I am proficient in front-end and back-end development as well as
             database management.{" "}
           </p>
-        </p>
+        </div>
       </section>
     </>
   );
