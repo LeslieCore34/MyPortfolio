@@ -47,9 +47,9 @@ export default function NavBar({ menuOpen, setMenuOpen }) {
           <a href="#section-contact" className="section-menu">
             Contact
           </a>
-          <ButtonLanguage />
         </div>
       </div>
+      <ButtonLanguage />
     </nav>
   );
 }

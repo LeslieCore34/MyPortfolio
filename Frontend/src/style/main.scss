@@ -25,15 +25,15 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
-  width: 100%;
+  width: 50%;
   overflow-x: hidden;
 
   .burger-menu {
-    width: 100vw;
-    height: 37px;
-    margin-left: 5%;
-    margin-top: 16px;
     cursor: pointer;
+    position: absolute;
+    left: 5%;
+    top: 16px;
+    z-index: 1000;
 
     .burger-image {
       background-image: url(../assets/menu-burger.png);
@@ -48,12 +48,14 @@ body {
     display: none;
 
     &.active {
-      margin-left: 18px;
       display: flex;
       flex-direction: column;
       position: absolute;
-      width: 100%;
-      max-width: 150px;
+      left: 25px;
+      top: 60px;
+      width: 150px;
+      background-color: #f8f8f8;
+      z-index: 900;
 
       .menu-container {
         margin-top: 10px;
@@ -64,9 +66,8 @@ body {
 
         a {
           color: black;
-          font-family: "Montserrat", sans-serif;
-          font-optical-sizing: auto;
-          font-weight: 500;
+          font-family: "Poppins", sans-serif;
+          font-weight: 400;
           font-style: normal;
           font-size: 15px;
         }
@@ -79,33 +80,33 @@ body {
 }
 
 .language-toggle {
-  position: relative;
-  width: 100px;
-  height: 40px;
-  background-color: #ccc;
+  position: absolute;
+  width: 60px;
+  height: 32px;
   cursor: pointer;
   border-radius: 20px;
   overflow: hidden;
+  right: 30px;
+  top: 18px;
+  z-index: 1100;
 }
 
 .slider {
   height: 100%;
   width: 100%;
-  background-color: #007bff;
   color: white;
-  line-height: 40px;
+  line-height: 32px;
   text-align: center;
   position: absolute;
-  transition: transform 0.3s ease-in-out;
   border-radius: 20px;
 }
 
-.slider.right {
-  transform: translateX(0);
+.slider.english {
+  background-color: #c12358;
 }
 
-.slider.left {
-  transform: translateX(-100%);
+.slider.french {
+  background-color: #03045e;
 }
 
 // HOME SECTION
@@ -118,7 +119,7 @@ body {
   margin-left: 20%;
 
   &.menu-active {
-    margin-top: 180px;
+    margin-top: 230px;
   }
 
   .fullstack {
@@ -165,11 +166,13 @@ body {
     }
   }
 
-  .container-social {
+  .contact-container-home {
     margin-top: 3em;
     display: flex;
     flex-direction: row;
-    width: 50%;
+    width: fit-content;
+    border: solid;
+    border-radius: 13px;
   }
 
   .github {
@@ -198,6 +201,7 @@ body {
     height: 30px;
     width: 30px;
     margin-top: 4px;
+    margin-right: 7px;
   }
 }
 
@@ -261,7 +265,7 @@ body {
   }
 
   .expertise-category-title {
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 10px;
     margin-left: 20px;
     font-family: "Poppins", sans-serif;
@@ -482,7 +486,7 @@ body {
 // CONTACT
 
 .contact-container {
-  height: 120px;
+  // height: 120px;
   display: flex;
   flex-direction: column;
   align-items: center;

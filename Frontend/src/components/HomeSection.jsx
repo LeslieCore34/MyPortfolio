@@ -15,7 +15,7 @@ export default function HomeSection({ menuOpen }) {
           <p className="arrow"></p>
           <Typewriter />
         </div>
-        <p className="container-social">
+        <div className="contact-container-home">
           <a
             className="github "
             target="blank"
@@ -30,7 +30,7 @@ export default function HomeSection({ menuOpen }) {
             className="email social-link"
             href="mailto:leslie.abajoli1989@gmail.com"
           ></a>
-        </p>
+        </div>
       </section>
     </>
   );

@@ -1,10 +1,19 @@
 [
   {
     "id": "streetart",
-    "title": "Street-art-Hunters",
+    "title": {
+      "en": "Street-art Hunters",
+      "fr": "Street-art Hunters"
+    },
     "image": "/myportfolio/src/assets/street-art-devices2.png",
-    "description": "Street-Art Hunters is a project I developed with two classmates during my studies.",
-    "usage": "Use your camera to capture city street art, and accumulate points for each discovery!",
+    "description": {
+      "en": "Street-Art Hunters is a project I developed with two classmates during my studies.",
+      "fr": "Street-Art Hunters est un projet que j'ai développé avec deux camarades pendant mes études."
+    },
+    "usage": {
+      "en": "Use your camera to capture city street art, and accumulate points for each discovery!",
+      "fr": "Utilisez votre caméra pour capturer l'art urbain de la ville et accumulez des points pour chaque découverte !"
+    },
     "technologies": [
       "React.js",
       "Node.js",
@@ -13,35 +22,72 @@
       "Google Maps",
       "Live location"
     ],
-    "functionalities": [
-      "Google Maps Integration",
-      "Real-time Geolocation",
-      "Photo functionality to take pictures",
-      "Secured authentication with Tokens",
-      "Password stored using bcrypt",
-      "Relational Database with MySQL",
-      "MVC architecture"
-    ],
+    "functionalities": {
+      "en": [
+        "Google Maps Integration",
+        "Real-time Geolocation",
+        "Photo functionality to take pictures",
+        "Secured authentication with Tokens",
+        "Password stored using bcrypt",
+        "Relational Database with MySQL",
+        "MVC architecture"
+      ],
+      "fr": [
+        "Integration de Google Maps",
+        "Géolocalisation en temps réel",
+        "Prise de photo",
+        "Authentification par Token",
+        "Stockage et hash des mots de passes avec bcrypt",
+        "Base de données relationnelle MySQL",
+        "Architecture MVC"
+      ]
+    },
     "link": "https://street-art-hunter.laloupe-1.wilders.dev/map",
-    "linkText": "Start to play!"
+    "linkText": {
+      "en": "Start to play!",
+      "fr": "Commencez à jouer !"
+    }
   },
   {
     "id": "eshop",
-    "title": "E-shop",
+    "title": {
+      "en": "E-shop",
+      "fr": "Boutique en Ligne"
+    },
     "image": "/myportfolio/src/assets/Eshop.png",
-    "description": "Eshop is a project I am currently developing. This web application features a user interface built with React and styled using SCSS.",
-    "usage": "You can browse through the articles and (almost) purchase them!",
+    "description": {
+      "en": "Eshop is a project I am currently developing. This web application features a user interface built with React and styled using SCSS.",
+      "fr": "Eshop est un projet que je développe actuellement. Cette application web dispose d'une interface utilisateur conçue avec React et stylisée avec SCSS."
+    },
+    "usage": {
+      "en": "You can browse through the articles and (almost) purchase them!",
+      "fr": "Vous pouvez parcourir les articles et (presque) les acheter !"
+    },
     "technologies": ["React.js", "Node.js", "Express.js", "REST API", "Stripe"],
-    "functionalities": [
-      "Multiple products pages",
-      "Stripe for (fake) payment",
-      "Secured authentication with Tokens",
-      "Password stored using bcrypt",
-      "Download of images in database",
-      "Relational Database with MySQL",
-      "MVC architecture"
-    ],
+    "functionalities": {
+      "en": [
+        "Multiple products pages",
+        "Stripe for (fake) payment",
+        "Secured authentication with Tokens",
+        "Password stored using bcrypt",
+        "Download of images in database",
+        "Relational Database with MySQL",
+        "MVC architecture"
+      ],
+      "fr": [
+        "Pages de produits multiples",
+        "Stripe pour le paiement (factice)",
+        "Authentification sécurisée avec Tokens",
+        "Mot de passe stocké avec bcrypt",
+        "Téléchargement d'images dans la base de données",
+        "Base de données relationnelle MySQL",
+        "Architecture MVC"
+      ]
+    },
     "link": "https://github.com/LeslieCore34/Eshop",
-    "linkText": "Checkout my code!"
+    "linkText": {
+      "en": "Checkout my code!",
+      "fr": "Vérifiez mon code !"
+    }
   }
 ]
