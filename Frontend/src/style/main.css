@@ -19,12 +19,18 @@ body {
   background-color: #f8f8f8;
 }
 
+.navbar-container {
+  background-color: #dddddf;
+  height: 60px;
+}
+
 .NavBar {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
   width: 50%;
   overflow-x: hidden;
+  background-color: #dddddf;
 }
 .NavBar .burger-menu {
   cursor: pointer;
@@ -32,6 +38,7 @@ body {
   left: 5%;
   top: 16px;
   z-index: 1000;
+  background-color: #dddddf;
 }
 .NavBar .burger-menu .burger-image {
   background-image: url(../assets/menu-burger.png);
@@ -39,6 +46,7 @@ body {
   background-repeat: no-repeat;
   width: 35px;
   height: 40px;
+  background-color: #dddddf;
 }
 .NavBar .menu {
   display: none;
@@ -73,14 +81,17 @@ body {
 
 .language-toggle {
   position: absolute;
-  width: 60px;
-  height: 32px;
+  width: 58px;
+  height: 24px;
   cursor: pointer;
   border-radius: 20px;
   overflow: hidden;
   right: 30px;
-  top: 18px;
+  top: 20px;
   z-index: 1100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .slider {
@@ -89,6 +100,9 @@ body {
   color: white;
   line-height: 32px;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   border-radius: 20px;
 }
@@ -102,15 +116,16 @@ body {
 }
 
 .home {
-  height: 282px;
+  height: 95vh;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-top: 9em;
-  margin-left: 20%;
+  justify-content: center;
+  padding-left: 20%;
+  background-color: white;
 }
 .home.menu-active {
-  margin-top: 230px;
+  margin-top: 145px;
 }
 .home .fullstack {
   font-size: 30px;
@@ -159,6 +174,7 @@ body {
   width: fit-content;
   border: solid;
   border-radius: 13px;
+  background-color: #f8f8f8;
 }
 .home .github {
   background-image: url(../assets/github.png);
@@ -192,16 +208,14 @@ body {
   grid-template-columns: 10% 90%;
   grid-template-rows: auto auto;
   overflow-x: hidden;
-  margin: 1em;
-  margin-top: 7em;
+  background: radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(221, 221, 223) 100%);
 }
 
 .presentation-main-container {
   height: auto;
   width: 92%;
   margin-left: 17px;
-  margin-top: 5px;
-  padding: 0 15px 15px 15px;
+  padding: 10px 15px 15px 20px;
   display: flex;
   flex-direction: column;
   text-align: justify;
@@ -216,6 +230,7 @@ body {
 }
 .presentation-main-container .presentation-second-container {
   font-size: 15px;
+  margin-bottom: 20px;
 }
 .presentation-main-container .presentation-second-container .presentation-one,
 .presentation-main-container .presentation-second-container .presentation-two,
@@ -265,6 +280,7 @@ body {
   display: grid;
   justify-content: center;
   align-items: center;
+  padding-left: 23px;
 }
 .stack-container .container {
   background-repeat: no-repeat;
@@ -302,17 +318,20 @@ body {
   grid-template-columns: 100%;
   grid-template-rows: auto;
   overflow-x: hidden;
-  margin: 1em;
+  padding: 1em;
   justify-items: center;
+  background-color: white;
 }
 
 .projects-introduction-title {
   display: flex;
   justify-content: center;
   font-size: 30px;
-  margin-top: 25px;
+  padding-top: 25px;
+  padding-bottom: 25px;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
+  background-color: white;
 }
 
 .global-projects-container {
@@ -445,6 +464,7 @@ body {
   font-weight: 400;
   font-style: normal;
   margin-bottom: 10px;
+  background-color: #dddddf;
 }
 .contact-container .contact-title {
   font-size: 22px;
@@ -472,11 +492,6 @@ body {
 }
 
 @media screen and (min-width: 400px) {
-  .home {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
   .grid-container .project-use-description {
     width: 79%;
   }
@@ -486,6 +501,9 @@ body {
   }
 }
 @media screen and (min-width: 500px) {
+  .home {
+    padding-left: 22%;
+  }
   .project-use-description {
     width: 70%;
   }
@@ -499,6 +517,12 @@ body {
   }
 }
 @media screen and (min-width: 600px) {
+  .language-toggle {
+    top: 11px;
+  }
+  .navbar-container {
+    height: 44px;
+  }
   .NavBar {
     overflow-x: hidden;
     display: flex;
@@ -538,11 +562,7 @@ body {
     margin-top: 10px;
   }
   .home {
-    display: flex;
-    flex-direction: column;
-    height: 340px;
-    margin-left: 30%;
-    margin-bottom: 7em;
+    padding-left: 25%;
   }
   .home .container-social {
     display: flex;
@@ -554,7 +574,8 @@ body {
     grid-template-columns: 50% 50%;
     grid-template-rows: auto auto;
     overflow-x: hidden;
-    margin: 1em;
+    padding: 1em;
+    background-color: #dddddf;
   }
   .stack-container {
     grid-area: 1/1/2/3;
@@ -565,17 +586,12 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    padding-left: 0px;
     margin-bottom: 2em;
   }
   .stack-container .container {
     width: 50px;
     height: 50px;
-  }
-  .presentation-main-container {
-    margin-left: 17px;
-    margin-top: 1em;
-    padding: 2%;
-    padding: 15px;
   }
   .presentation-second-container {
     margin-top: 30px;
@@ -624,7 +640,7 @@ body {
 }
 @media screen and (min-width: 900px) {
   .home {
-    margin-left: 33%;
+    padding-left: 28%;
   }
   .home .fullstack {
     font-size: 42px;
@@ -662,9 +678,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .home {
-    height: 470px;
-    margin-left: 33%;
-    margin-bottom: 5em;
+    padding-left: 32%;
   }
   .home .fullstack {
     font-size: 48px;
@@ -682,11 +696,6 @@ body {
   .presentation-second-container {
     font-size: 15px;
     line-height: 25px;
-  }
-  .home .container-social {
-    display: flex;
-    margin-top: 5em;
-    width: 40%;
   }
   .presentation-main-container {
     padding: 50px;
@@ -762,11 +771,6 @@ body {
   }
 }
 @media screen and (min-width: 1200px) {
-  .home {
-    height: 470px;
-    margin-left: 42%;
-    margin-bottom: 5em;
-  }
   .list-test {
     display: flex;
     flex-direction: row;

@@ -24,33 +24,35 @@ export default function NavBar({ menuOpen, setMenuOpen }) {
   };
 
   return (
-    <nav className="NavBar">
-      <div
-        className={`burger-menu ${menuOpen ? "active" : ""}`}
-        onClick={handleClick}
-      >
-        {" "}
-        <p className="burger-image"></p>{" "}
-      </div>
-
-      <div className={`menu ${menuOpen ? "active" : "large"}`}>
-        <div className="menu-container">
-          <a href="#section-home" className="section">
-            Home
-          </a>
-          <a href="#section-presentation" className="section-menu">
-            Presentation
-          </a>
-          <a href="#section-projects" className="section-menu">
-            Projects
-          </a>
-          <a href="#section-contact" className="section-menu">
-            Contact
-          </a>
+    <div className="navbar-container">
+      <nav className="NavBar">
+        <div
+          className={`burger-menu ${menuOpen ? "active" : ""}`}
+          onClick={handleClick}
+        >
+          {" "}
+          <p className="burger-image"></p>{" "}
         </div>
-      </div>
-      <ButtonLanguage />
-    </nav>
+
+        <div className={`menu ${menuOpen ? "active" : "large"}`}>
+          <div className="menu-container">
+            <a href="#section-home" className="section">
+              Home
+            </a>
+            <a href="#section-presentation" className="section-menu">
+              Presentation
+            </a>
+            <a href="#section-projects" className="section-menu">
+              Projects
+            </a>
+            <a href="#section-contact" className="section-menu">
+              Contact
+            </a>
+          </div>
+        </div>
+        <ButtonLanguage />
+      </nav>
+    </div>
   );
 }
 
