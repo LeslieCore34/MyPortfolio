@@ -11,7 +11,7 @@ function ProjectCard({ project }) {
       <div className="image-container">
         <img
           src={project.image}
-          alt={project.title[language]} // Utiliser la traduction pour l'alt
+          alt={project.title[language]}
           className="project-image"
         />
       </div>

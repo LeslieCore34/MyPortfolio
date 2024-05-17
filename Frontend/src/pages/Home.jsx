@@ -20,13 +20,11 @@ export default function Home() {
         <TechnicalSkills />
         <StackImages />
       </div>
-      <div className="projects-introduction-title">Projects</div>
+      <div className="projects-introduction-title">My Projects</div>
       <div className="grid-container-projects">
         {projectsData.map((project) => (
           <ProjectCard key={project.id} project={project} />
         ))}
-        {/* <StreetArt />
-        <Eshop /> */}
       </div>
       <Contact />
     </>
