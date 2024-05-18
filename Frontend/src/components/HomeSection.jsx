@@ -21,14 +21,15 @@ export default function HomeSection({ menuOpen }) {
             target="blank"
             href="https://github.com/LeslieCore34"
           ></a>
+
+          <a
+            className="email social-link"
+            href="mailto:leslie.abajoli1989@gmail.com"
+          ></a>
           <a
             className="linkedin social-link"
             target="blank"
             href="https://www.linkedin.com/in/leslie-abajoli/"
-          ></a>
-          <a
-            className="email social-link"
-            href="mailto:leslie.abajoli1989@gmail.com"
           ></a>
         </div>
       </section>
