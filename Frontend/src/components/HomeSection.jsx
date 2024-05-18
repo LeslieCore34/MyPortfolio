@@ -1,18 +1,21 @@
 import PropTypes from "prop-types";
+import Typewriter from "./Typewritter";
 
 export default function HomeSection({ menuOpen }) {
-  console.log(menuOpen);
   return (
     <>
       <section
         id="section-home"
         className={`home ${menuOpen ? "menu-active" : ""}`}
       >
-        <h1 className="fullstack">FULLSTACK DEVELOPER test</h1>
+        <h1 className="fullstack">FULLSTACK DEVELOPER</h1>
         <p className="name"> Leslie</p>
         <p className="surname">ABAJOLI</p>
-
-        <p className="container-social">
+        <div className="container-for-animation">
+          <p className="arrow"></p>
+          <Typewriter />
+        </div>
+        <div className="contact-container-home">
           <a
             className="github "
             target="blank"
@@ -27,7 +30,7 @@ export default function HomeSection({ menuOpen }) {
             className="email social-link"
             href="mailto:leslie.abajoli1989@gmail.com"
           ></a>
-        </p>
+        </div>
       </section>
     </>
   );

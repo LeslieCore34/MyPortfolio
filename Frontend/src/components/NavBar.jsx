@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import { useEffect } from "react";
+import ButtonLanguage from "./ButtonLanguage";
 
 export default function NavBar({ menuOpen, setMenuOpen }) {
   const handleResize = () => {
@@ -22,35 +23,36 @@ export default function NavBar({ menuOpen, setMenuOpen }) {
     }
   };
 
-  console.log(menuOpen);
-
   return (
-    <nav className="NavBar">
-      <div
-        className={`burger-menu ${menuOpen ? "active" : ""}`}
-        onClick={handleClick}
-      >
-        {" "}
-        <p className="burger-image"></p>{" "}
-      </div>
-
-      <div className={`menu ${menuOpen ? "active" : "large"}`}>
-        <div className="menu-container">
-          <a href="#section-home" className="section">
-            Home
-          </a>
-          <a href="#section-presentation" className="section-menu">
-            Presentation
-          </a>
-          <a href="#section-projects" className="section-menu">
-            Projects
-          </a>
-          <a href="#section-contact" className="section-menu">
-            Contact
-          </a>
+    <div className="navbar-container">
+      <nav className="NavBar">
+        <div
+          className={`burger-menu ${menuOpen ? "active" : ""}`}
+          onClick={handleClick}
+        >
+          {" "}
+          <p className="burger-image"></p>{" "}
         </div>
-      </div>
-    </nav>
+
+        <div className={`menu ${menuOpen ? "active" : "large"}`}>
+          <div className="menu-container">
+            <a href="#section-home" className="section">
+              Home
+            </a>
+            <a href="#section-presentation" className="section-menu">
+              Presentation
+            </a>
+            <a href="#section-projects" className="section-menu">
+              Projects
+            </a>
+            <a href="#section-contact" className="section-menu">
+              Contact
+            </a>
+          </div>
+        </div>
+        <ButtonLanguage />
+      </nav>
+    </div>
   );
 }
 

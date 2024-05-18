@@ -3,9 +3,9 @@ import HomeSection from "../components/HomeSection";
 import PresentationSection from "../components/PresentationSection";
 import StackImages from "../components/StackImages";
 import TechnicalSkills from "../components/TechnicalSkills";
-import StreetArt from "../components/StreetArt";
 import Contact from "../components/Contact";
-import Eshop from "../components/Eshop";
+import ProjectCard from "../components/ProjectCard";
+import projectsData from "../data/projectsData.json";
 import { useState } from "react";
 
 export default function Home() {
@@ -20,9 +20,11 @@ export default function Home() {
         <TechnicalSkills />
         <StackImages />
       </div>
+      <div className="projects-introduction-title">My Projects</div>
       <div className="grid-container-projects">
-        <StreetArt />
-        <Eshop />
+        {projectsData.map((project) => (
+          <ProjectCard key={project.id} project={project} />
+        ))}
       </div>
       <Contact />
     </>
