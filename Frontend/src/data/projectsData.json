@@ -8,11 +8,11 @@
     "image": "/myportfolio/src/assets/street-art-devices2.png",
     "description": {
       "en": "Street-Art Hunters is a project I developed with two classmates during my studies.",
-      "fr": "Street-Art Hunters est un projet que j'ai développé avec deux camarades pendant mes études."
+      "fr": "Street-Art Hunters est un projet que j'ai développé avec deux de mes camarades pendant mes études."
     },
     "usage": {
       "en": "Use your camera to capture city street art, and accumulate points for each discovery!",
-      "fr": "Utilisez votre caméra pour capturer l'art urbain de la ville et accumulez des points pour chaque découverte !"
+      "fr": "Utilisez votre caméra pour capturer les street-arts de la ville et accumulez des points pour chaque découverte !"
     },
     "technologies": [
       "React.js",
@@ -44,8 +44,8 @@
     },
     "link": "https://street-art-hunter.laloupe-1.wilders.dev/map",
     "linkText": {
-      "en": "Start to play!",
-      "fr": "Commencez à jouer !"
+      "en": "Click here to play!",
+      "fr": "Cliquez ici pour jouer !"
     }
   },
   {
@@ -60,8 +60,8 @@
       "fr": "Eshop est un projet que je développe actuellement. Cette application web dispose d'une interface utilisateur conçue avec React et stylisée avec SCSS."
     },
     "usage": {
-      "en": "You can browse through the articles and (almost) purchase them!",
-      "fr": "Vous pouvez parcourir les articles et (presque) les acheter !"
+      "en": "Please browse through the articles and purchase some (stripe test mode only)!",
+      "fr": "N'hésitez pas à parcourir les articles !"
     },
     "technologies": ["React.js", "Node.js", "Express.js", "REST API", "Stripe"],
     "functionalities": {
@@ -75,9 +75,9 @@
         "MVC architecture"
       ],
       "fr": [
-        "Pages de produits multiples",
-        "Stripe pour le paiement (factice)",
-        "Authentification sécurisée avec Tokens",
+        "Plusieurs pages produits",
+        "Stripe (test mode)",
+        "Authentification sécurisée (Tokens)",
         "Mot de passe stocké avec bcrypt",
         "Téléchargement d'images dans la base de données",
         "Base de données relationnelle MySQL",
@@ -86,8 +86,8 @@
     },
     "link": "https://github.com/LeslieCore34/Eshop",
     "linkText": {
-      "en": "Checkout my code!",
-      "fr": "Vérifiez mon code !"
+      "en": "Checkout my code !",
+      "fr": "Voir mon code ici !"
     }
   }
 ]

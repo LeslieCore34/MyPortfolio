@@ -20,7 +20,7 @@ export default function Home() {
         <TechnicalSkills />
         <StackImages />
       </div>
-      <div className="projects-introduction-title">My Projects</div>
+      <div className="projects-introduction-title">MY PROJECTS</div>
       <div className="grid-container-projects">
         {projectsData.map((project) => (
           <ProjectCard key={project.id} project={project} />
