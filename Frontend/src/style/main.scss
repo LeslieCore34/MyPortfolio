@@ -16,15 +16,12 @@ body,
 html {
   overflow-x: hidden;
 }
-body {
-  background-color: #f8f8f8;
-}
 
 // NAVIGATION BAR MENU
 
 .navbar-container {
-  background-color: #dddddf;
   height: 60px;
+  background-color: black;
 }
 
 .NavBar {
@@ -33,7 +30,13 @@ body {
   font-style: normal;
   width: 50%;
   overflow-x: hidden;
-  background-color: #dddddf;
+
+  .menu .menu-container .section-menu {
+    color: white;
+  }
+  .section {
+    color: white;
+  }
 
   .burger-menu {
     cursor: pointer;
@@ -41,15 +44,14 @@ body {
     left: 5%;
     top: 16px;
     z-index: 1000;
-    background-color: #dddddf;
 
     .burger-image {
-      background-image: url(../assets/burger-menu.svg);
+      background-image: url(../assets/burger-white.svg);
       background-size: contain;
       background-repeat: no-repeat;
       width: 35px;
-      height: 40px;
-      background-color: #dddddf;
+      height: 35px;
+      background-color: #f2f2f2;
     }
   }
 
@@ -60,10 +62,10 @@ body {
       display: flex;
       flex-direction: column;
       position: absolute;
-      left: 25px;
+      padding-left: 25px;
       top: 60px;
-      width: 150px;
-      background-color: #f8f8f8;
+      width: 100%;
+      background-color: #3c3f3d;
       z-index: 900;
 
       .menu-container {
@@ -74,11 +76,11 @@ body {
         font-size: 15px;
 
         a {
-          color: black;
           font-family: "Poppins", sans-serif;
           font-weight: 400;
           font-style: normal;
           font-size: 15px;
+          color: white;
         }
         .section-menu {
           margin-top: 11px;
@@ -90,8 +92,8 @@ body {
 
 .language-toggle {
   position: absolute;
-  width: 45px;
-  height: 25px;
+  width: 52px;
+  height: 29px;
   cursor: pointer;
   border-radius: 20px;
   overflow: hidden;
@@ -101,9 +103,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow:
-    1px 2px 2px rgba(0, 0, 0, 0.2),
-    -2px -2px 5px rgba(255, 255, 255, 0.5);
 }
 
 .slider {
@@ -135,18 +134,19 @@ body {
   align-items: flex-start;
   justify-content: center;
   padding-left: 20%;
-  background-color: white;
+  background-color: #3c3f3d;
 
   &.menu-active {
-    margin-top: 145px;
+    margin-top: 135px;
   }
 
   .fullstack {
     font-size: 33px;
     margin-bottom: 28px;
     font-family: "Roboto", sans-serif;
-    font-weight: 700;
+    font-weight: 500;
     font-style: normal;
+    color: white;
   }
 
   .name {
@@ -156,6 +156,7 @@ body {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
+    color: white;
   }
 
   .surname {
@@ -165,23 +166,28 @@ body {
     font-weight: 500;
     font-style: normal;
     margin-bottom: 29px;
+    color: white;
   }
 
   .container-for-animation {
     display: flex;
     flex-direction: row;
-    color: #03045e;
+    color: white;
 
     .arrow {
-      background-image: url(../assets/arrow.png);
+      background-image: url(../assets/white-arrow.svg);
       background-size: cover;
       background-repeat: no-repeat;
-      height: 21px;
-      width: 11px;
+      height: 22px;
+      width: 22px;
       margin-right: 10px;
     }
     .moving-presentation {
       height: 3px;
+      font-size: 24px;
+      font-family: "Roboto", sans-serif;
+      font-weight: 400;
+      font-style: normal;
     }
   }
 
@@ -196,7 +202,7 @@ body {
   }
 
   .github {
-    background-image: url(../assets/github-color.svg);
+    background-image: url(../assets/github-white.svg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 27px;
@@ -206,7 +212,7 @@ body {
   }
 
   .email {
-    background-image: url(../assets/email-color.svg);
+    background-image: url(../assets/email-white.svg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 25px;
@@ -215,7 +221,7 @@ body {
   }
 
   .linkedin {
-    background-image: url(../assets/linkedin-color.svg);
+    background-image: url(../assets/linkedin-white.svg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 29px;
@@ -233,27 +239,34 @@ body {
   overflow-x: hidden;
   background: radial-gradient(
     circle,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(221, 221, 223, 1) 100%
+    #f6f0f3,
+    #f0ebef,
+    #e9e6ea,
+    #e3e1e6,
+    #dcdce1,
+    #d6d8dc,
+    #d1d4d7,
+    #cdd0d2,
+    #c8cbcc,
+    #c4c6c7,
+    #bfc1c1,
+    #bbbcbc
   );
 
   .presentation-main-container {
     height: auto;
     width: 92%;
     margin-left: 17px;
-    // margin-top: 5px;
     padding: 10px 15px 15px 20px;
     display: flex;
     flex-direction: column;
     text-align: justify;
     .presentation-title {
-      font-size: 20px;
-      margin-bottom: 10px;
+      font-size: 25px;
       font-family: "Poppins", sans-serif;
-      font-weight: 600;
+      font-weight: 500;
       font-style: normal;
-      // color: #00388e;
-      // color: black;
+      margin-bottom: 1em;
     }
     .presentation-second-container {
       font-size: 15px;
@@ -262,8 +275,7 @@ body {
       .presentation-two,
       .presentation-three {
         margin-bottom: 12px;
-        font-family: "Montserrat", sans-serif;
-        font-optical-sizing: auto;
+        font-family: "Poppins", sans-serif;
         font-weight: 400;
         font-style: normal;
       }
@@ -341,6 +353,14 @@ body {
   flex-direction: column;
   text-align: justify;
 
+  .tech-stack-title {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    margin-bottom: 1em;
+    font-size: 25px;
+  }
+
   .bullet-point-image {
     display: flex;
     flex-direction: row;
@@ -353,14 +373,13 @@ body {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-style: normal;
-    // color: #00388e;
   }
 
   .technical-text {
     font-size: 15px;
     margin-bottom: 19px;
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
+    margin-left: 27px;
+    font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
   }
@@ -375,45 +394,48 @@ body {
   overflow-x: hidden;
   padding: 1em;
   justify-items: center;
-  background-color: white;
+  background: #fafafa;
 }
 
 .projects-introduction-title {
   display: flex;
   justify-content: center;
-  font-size: 30px;
+  font-size: 28px;
   padding-top: 25px;
   padding-bottom: 25px;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
-  background-color: white;
+  background: #fafafa;
 }
 
 .global-projects-container {
   height: auto;
-  width: fit-content;
+  width: 90%;
   margin: 1em;
   padding: 2%;
   display: flex;
   flex-direction: column;
-  text-align: justify;
   align-items: center;
+  border: 0px inset grey;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  border-radius: 5px;
 
   .project-title {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 20px;
+    font-size: 25px;
     font-family: "Poppins", sans-serif;
-    font-weight: 600;
+    font-weight: 500;
     font-style: normal;
     width: 100%;
-    padding: 5px;
+    padding: 3px;
     margin-top: 10px;
     margin-bottom: 10px;
-    color: white;
-    background-color: #03045e;
+    color: black;
     box-shadow: #ccc;
+    border-radius: 5px;
   }
 
   .project-image {
@@ -422,13 +444,13 @@ body {
   }
 
   .project-short-description {
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
+    font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 15px;
     display: flex;
     flex-direction: column;
+    width: 95%;
 
     .how-to-use {
       margin-top: 1em;
@@ -449,10 +471,11 @@ body {
         margin-bottom: 1em;
         margin-top: 2em;
         padding: 3px;
-        color: white;
-        background-color: #7b0063;
+        color: black;
         border-radius: 7px;
+        border: 1px solid lightgray;
         box-shadow: #ccc;
+        letter-spacing: 1px;
       }
 
       .technologies {
@@ -465,8 +488,7 @@ body {
       li {
         position: relative;
         margin-bottom: 5px;
-        font-family: "Montserrat", sans-serif;
-        font-optical-sizing: auto;
+        font-family: "Poppins", sans-serif;
         font-weight: 400;
         font-style: normal;
         font-size: 15px;
@@ -495,23 +517,24 @@ body {
       margin-bottom: 1em;
       margin-top: 2em;
       padding: 3px;
-      color: white;
-      background-color: #ed6a4a;
+      color: black;
       border-radius: 7px;
+      border: 1px solid lightgray;
       box-shadow: #ccc;
+      letter-spacing: 1px;
     }
 
     .functionalities {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      padding-left: 1em;
+      padding-left: 2em;
+      width: 87%;
     }
     li {
       position: relative;
       margin-bottom: 5px;
-      font-family: "Montserrat", sans-serif;
-      font-optical-sizing: auto;
+      font-family: "Poppins", sans-serif;
       font-weight: 400;
       font-style: normal;
       font-size: 15px;
@@ -526,11 +549,12 @@ body {
   }
   .link {
     margin-top: 1em;
+    padding: 5px 20px 5px 20px;
     color: black;
     font-family: "Poppins", sans-serif;
-    font-weight: 600;
+    font-weight: 500;
     font-style: normal;
-    font-size: 24px;
+    font-size: 19px;
     color: #03045e;
   }
 }
@@ -538,7 +562,6 @@ body {
 // CONTACT
 
 .contact-container {
-  // height: 120px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -546,14 +569,14 @@ body {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  margin-bottom: 10px;
-  background-color: #dddddf;
+  background-color: #3c3f3d;
 
   .contact-title {
-    font-size: 22px;
+    font-size: 28px;
     font-family: "Poppins", sans-serif;
-    font-weight: 600;
+    font-weight: 400;
     font-style: normal;
+    color: white;
   }
 
   .contact-details {
@@ -565,15 +588,16 @@ body {
     margin-top: 2em;
   }
   .contact-link {
-    color: #0000d1;
-    font-weight: bold;
+    color: white;
+    font-size: 20px;
     cursor: pointer;
   }
 
   .signature {
-    font-size: 14px;
+    font-size: 16px;
     margin-top: 1em;
-    color: #03045e;
+    color: white;
+    padding-bottom: 10px;
   }
 }
 
@@ -610,7 +634,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding-left: 10em;
+    padding-left: 8em;
   }
 }
 
@@ -643,7 +667,6 @@ body {
         margin: 0 10px;
 
         a {
-          color: black;
           font-family: "Montserrat", sans-serif;
           font-optical-sizing: auto;
           font-weight: 500;
@@ -677,6 +700,7 @@ body {
   //PRESENTATION SECTION
 
   .grid-container {
+    height: 100vh;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: auto auto;
@@ -774,18 +798,29 @@ body {
     overflow-x: hidden;
   }
 
+  .container-for-lists {
+    height: 580px;
+  }
+
   .global-projects-container .project-image {
     height: 245px;
     width: 330px;
   }
   .project-short-description {
-    height: 100px;
+    height: 200px;
   }
   .technology-list-container {
-    height: 175px;
+    height: 250px;
   }
   .functionnalities-list-container {
     height: 215px;
+  }
+
+  .global-projects-container
+    .container-for-lists
+    .technology-list-container
+    .technologies {
+    padding-left: 7em;
   }
 
   .contact-details {
@@ -842,16 +877,22 @@ body {
     grid-template-columns: 50% 50%;
     grid-template-rows: auto auto;
     overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 550px;
 
     .technology-list-container {
       display: flex;
       flex-direction: column;
-      height: 400px;
+      // height: 400px;
       width: 80%;
+      padding: 10px;
     }
 
     .functionnalities-list-container {
       width: 80%;
+      padding: 10px;
     }
   }
 
@@ -859,7 +900,7 @@ body {
     .container-for-lists
     .technology-list-container
     .technologies {
-    padding-left: 1em;
+    padding-left: 2em;
   }
 }
 
@@ -874,7 +915,7 @@ body {
       width: 68%;
     }
     .language-toggle {
-      width: 50px;
+      width: 67px;
       height: 26px;
     }
   }
@@ -893,107 +934,55 @@ body {
     }
   }
 
-  .project-container {
-    padding: 0;
-    margin: 6em;
+  //PRESENTATION
+
+  .grid-container .presentation-main-container .presentation-title {
+    font-size: 28px;
   }
 
-  .presentation-second-container {
-    font-size: 15px;
+  .grid-container .presentation-main-container .presentation-second-container {
+    font-size: 17px;
     line-height: 25px;
   }
-
-  // .home .container-social {
-  //   display: flex;
-  //   // justify-content: space-evenly;
-  //   margin-top: 5em;
-  //   width: 40%;
-  // }
-
-  .presentation-main-container {
-    padding: 50px;
+  .expertise-category-container .tech-stack-title {
+    font-size: 28px;
   }
 
-  .presentation-main-container .presentation-title {
-    font-size: 22px;
+  .expertise-category-container .technical-text {
+    font-size: 17px;
   }
 
-  .technical-text-container {
-    padding: 50px;
-  }
-  .technical-title {
-    font-size: 20px;
-  }
+  //PROJECT
 
-  .technical-text {
-    line-height: 25px;
+  .projects-introduction-title {
+    letter-spacing: 2px;
   }
-
-  .project-container .project-title {
-    margin-top: 10px;
-    font-size: 30px;
-  }
-
-  .project-container .project-image-eshop {
-    height: 281px;
-    width: 383px;
-  }
-
-  .project-container .project-image {
-    height: 292px;
-    width: 386px;
-  }
-
-  .technologies-title {
-    font-size: 23px;
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-  }
-
   .grid-container-projects {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: auto auto;
     overflow-x: hidden;
-
-    .project-description {
-      margin-left: 3%;
-      font-size: 25px;
-    }
-
-    .functionnalities {
-      margin-left: 0%;
-    }
   }
 
-  .list-container .project-description {
-    font-size: 23px;
-  }
-
-  .project-use-description {
-    margin-top: 2em;
-    width: 83%;
-    height: 180px;
-
-    .description-text-project {
-      height: 140px;
-    }
-  }
-
-  .project-use-description .link-eshop {
-    font-size: 30px;
-  }
-
-  .project-use-description .link-streetart {
-    font-size: 30px;
-  }
-
-  .contact-container .contact-title {
-    font-size: 30px;
-  }
-
-  .contact-container .contact-details {
+  .global-projects-container .project-short-description {
     font-size: 16px;
+  }
+
+  .container-for-lists {
+    height: 430px;
+  }
+
+  .global-projects-container .functionnalities-list-container li {
+    font-size: 16px;
+  }
+
+  .global-projects-container
+    .container-for-lists
+    .technology-list-container
+    li {
+    font-size: 16px;
+  }
+  .global-projects-container .link {
+    font-size: 22px;
   }
 }

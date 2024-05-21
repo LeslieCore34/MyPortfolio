@@ -1,9 +1,10 @@
 {
   "en": {
-    "text-database": "Skilled in designing, manipulating, and querying databases to ensure efficient data storage and retrieval.",
-    "text-backend": "Experienced in building Back-End APIs with Node.js and Express.js.",
-    "text-frontend": "Design and develop user interfaces with a focus on ReactJS asset optimization.",
-    "text-management": "I can manage projects and timelines using Agile development methods, with experience in Scrum methods."
+    "text-web": "HTML, CSS, Javascript, Typescript.",
+    "text-server": "Node.js, Express.js, REST API's.",
+    "text-database": "MySQL.",
+    "text-version": "Git, Github, Trello.",
+    "text-deployement": "Github Pages, AWS."
   },
   "fr": {
     "text-database": "Expérimenté dans la conception, la manipulation et l'interrogation de bases de données afin d'assurer un stockage et une récupération efficaces des données.",
