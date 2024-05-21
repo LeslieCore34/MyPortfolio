@@ -2,17 +2,17 @@
   "en": {
     "presentation-title": "Hi there !",
     "presentation-texts": {
-      "presentation-one": "I'm a Web Developer who graduated in March 2024. During my studies, I've built several projects, and since graduating, I've continued to expand my skills by working on personal projects.",
+      "presentation-one": "I'm a Junior Web Developer who graduated in March 2024. During my studies, I've built several projects, and since graduating, I've continued to expand my skills by working on personal projects.",
       "presentation-two": "I'm always eager to learn more about web development. Currently, I'm focusing on mastering Typescript and the Angular framework to further enhance my skills and tackle new challenges.",
-      "presentation-three": "I am proficient in front-end development (HTML, CSS, JavaScript), back-end development (Node.js), and database management (MySQL) :"
+      "presentation-three": "I am proficient in front-end and back-end development as well as database management. "
     }
   },
   "fr": {
     "presentation-title": "Bonjour !",
     "presentation-texts": {
-      "presentation-one": "Je suis une développeuse web diplômée depuis mars 2024. Pendant mes études, j'ai réalisé plusieurs projets, et depuis j'ai continué à développer mes compétences en travaillant sur des projets personnels.",
+      "presentation-one": "Je suis une développeuse web junior, diplômée depuis mars 2024. Pendant mes études, j'ai réalisé plusieurs projets, et depuis j'ai continué à développer mes compétences en travaillant sur des projets personnels.",
       "presentation-two": "Je suis toujours désireuse d'en apprendre davantage sur le développement web. Actuellement, je me concentre sur la maîtrise de Typescript et du framework Angular pour améliorer mes compétences et relever de nouveaux défis.",
-      "presentation-three": "Mes compétences couvres le front-end (HTML, CSS, JavaScript), le back-end (Node.js) et la gestion de bases de données (MySQL) :"
+      "presentation-three": "Mes compétences couvres le front-end, le back-end et la gestion de bases de données"
     }
   }
 }
