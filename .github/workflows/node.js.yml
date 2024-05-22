@@ -34,6 +34,9 @@ jobs:
           cd Frontend
           npm run build
 
+      - name: Add CNAME file
+        run: echo 'www.leslieabajoli.com' > Frontend/dist/CNAME
+
       - name: Deploy with gh-pages
         run: |
           git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
