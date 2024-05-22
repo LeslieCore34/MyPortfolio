@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "portfolio",
   "main": "index.js",
-  "homepage": "https://github.com/LeslieCore34/myportfolio.git",
+  "homepage": "https://www.leslieabajoli.com",
   "scripts": {
+    "predeploy": "npm run build --prefix Frontend && echo 'www.leslieabajoli.com' > Frontend/dist/CNAME",
     "deploy": "cd Frontend && gh-pages -d dist",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "cross-env-shell 'concurrently -c green,yellow -t \"HH:mm:ss\" -p \"{name} {time}\" \"npm:dev-*\"'",

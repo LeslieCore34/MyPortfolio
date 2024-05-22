@@ -7,9 +7,10 @@
     "text-deployement": "Github Pages, AWS."
   },
   "fr": {
-    "text-database": "Expérimenté dans la conception, la manipulation et l'interrogation de bases de données afin d'assurer un stockage et une récupération efficaces des données.",
-    "text-backend": "Expérimenté dans le développement d'APIs Back-End avec Node.js et Express.js.",
-    "text-frontend": "Concevoir et développer des interfaces utilisateur en mettant l'accent sur l'optimisation des ressources ReactJS.",
-    "text-management": "Je peux gérer des projets et des échéanciers en utilisant des méthodes de développement Agile, avec une expérience dans les méthodes Scrum."
+    "text-web": "HTML, CSS, Javascript, Typescript.",
+    "text-server": "Node.js, Express.js, REST API's.",
+    "text-database": "MySQL.",
+    "text-version": "Git, Github, Trello.",
+    "text-deployement": "Github Pages, AWS."
   }
 }
