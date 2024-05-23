@@ -23,6 +23,9 @@ export default function PresentationSection() {
           <p className="presentation-three">
             {data["presentation-texts"]["presentation-three"]}
           </p>
+          <p className="presentation-four">
+            {data["presentation-texts"]["presentation-four"]}
+          </p>
         </div>
       </section>
     </>

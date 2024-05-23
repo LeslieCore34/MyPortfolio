@@ -5,14 +5,14 @@
       "en": "Street-art Hunters",
       "fr": "Street-art Hunters"
     },
-    "image": "/myportfolio/src/assets/street-art-devices2.png",
+    "image": "/src/assets/street-art-devices2.png",
     "description": {
       "en": "Street-Art Hunters is a project I developed with two classmates during my studies.",
       "fr": "Street-Art Hunters est un projet que j'ai développé avec deux de mes camarades pendant mes études."
     },
     "usage": {
       "en": "Use your camera to capture city street art, and accumulate points for each discovery!",
-      "fr": "Utilisez votre caméra pour capturer les street-arts de la ville et accumulez des points pour chaque découverte !"
+      "fr": "Utilisez votre téléphone pour capturer les street-arts à Bordeaux et accumulez des points pour chaque découverte !"
     },
     "technologies": [
       "React.js",
@@ -24,27 +24,27 @@
     ],
     "functionalities": {
       "en": [
-        "Google Maps Integration",
-        "Real-time Geolocation",
-        "Photo functionality to take pictures",
         "Secured authentication with Tokens",
         "Password stored using bcrypt",
         "Relational Database with MySQL",
-        "MVC architecture"
+        "MVC architecture",
+        "Google Maps Integration",
+        "Real-time Geolocation",
+        "Photo functionality to take pictures"
       ],
       "fr": [
-        "Integration de Google Maps",
-        "Géolocalisation en temps réel",
-        "Prise de photo",
         "Authentification par Token",
         "Stockage et hash des mots de passes avec bcrypt",
         "Base de données relationnelle MySQL",
-        "Architecture MVC"
+        "Architecture MVC",
+        "Integration de Google Maps",
+        "Géolocalisation en temps réel",
+        "Prise de photo"
       ]
     },
     "link": "https://street-art-hunter.laloupe-1.wilders.dev/map",
     "linkText": {
-      "en": "Click here to play!",
+      "en": "Click here to play !",
       "fr": "Cliquez ici pour jouer !"
     }
   },
@@ -52,12 +52,12 @@
     "id": "eshop",
     "title": {
       "en": "E-shop",
-      "fr": "Boutique en Ligne"
+      "fr": "E-shop"
     },
-    "image": "/myportfolio/src/assets/Eshop.png",
+    "image": "/src/assets/Eshop.png",
     "description": {
-      "en": "Eshop is a project I am currently developing. This web application features a user interface built with React and styled using SCSS.",
-      "fr": "Eshop est un projet que je développe actuellement. Cette application web dispose d'une interface utilisateur conçue avec React et stylisée avec SCSS."
+      "en": "Eshop is a project I am currently developing. It's a simple ecommerce website that allows you to browse through products and complete your purchase.",
+      "fr": "Eshop est un projet que je développe actuellement. C'est une site de e-commerce qui se veut simple avec différentes fonctionnalités."
     },
     "usage": {
       "en": "Please browse through the articles and purchase some (stripe test mode only)!",
