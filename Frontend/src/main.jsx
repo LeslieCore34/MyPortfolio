@@ -23,9 +23,7 @@ const router = createBrowserRouter(
   }
 );
 
-// const root = ReactDOM.createRoot(document.getElementById("root"));
-
-const container = document.getElementById("root"); // Obtenez le conteneur pour votre application
+const container = document.getElementById("root");
 const root = createRoot(container);
 
 root.render(
