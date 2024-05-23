@@ -14,6 +14,10 @@
   "author": "leslie",
   "license": "ISC",
   "dependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.12.12",
+    "@types/react": "^18.3.2",
+    "@types/react-dom": "^18.3.0",
     "npm": "^10.5.2"
   },
   "devDependencies": {

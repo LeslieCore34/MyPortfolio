@@ -1,18 +1,22 @@
 {
   "en": {
-    "presentation-title": "Hi there !",
+    "job-title": "FULLSTACK DEVELOPER",
+    "presentation-title": "Hello !",
     "presentation-texts": {
-      "presentation-one": "I'm a Junior Web Developer who graduated in March 2024. During my studies, I've built several projects, and since graduating, I've continued to expand my skills by working on personal projects.",
-      "presentation-two": "I'm always eager to learn more about web development. Currently, I'm focusing on mastering Typescript and the Angular framework to further enhance my skills and tackle new challenges.",
-      "presentation-three": "I am proficient in front-end and back-end development as well as database management. "
+      "presentation-one": "Welcome to my portfolio! I am a junior developer who graduated in March 2024.",
+      "presentation-two": "After several years of professional experience in sales administration and logistics, I decided to switch to the exciting field of web development.",
+      "presentation-three": "During my studies, I completed several projects, and since then, I have continued to develop my skills by working on independent web development projects.",
+      "presentation-four": "Always eager to learn new things, I continuously educate myself and apply my knowledge to projects that I am passionate about. Currently, I am self-learning TypeScript and Angular on projects that will soon be visible here."
     }
   },
   "fr": {
+    "job-title": "DEVELOPPEUSE FULLSTACK",
     "presentation-title": "Bonjour !",
     "presentation-texts": {
-      "presentation-one": "Je suis une développeuse web junior, diplômée depuis mars 2024. Pendant mes études, j'ai réalisé plusieurs projets, et depuis j'ai continué à développer mes compétences en travaillant sur des projets personnels.",
-      "presentation-two": "Je suis toujours désireuse d'en apprendre davantage sur le développement web. Actuellement, je me concentre sur la maîtrise de Typescript et du framework Angular pour améliorer mes compétences et relever de nouveaux défis.",
-      "presentation-three": "Mes compétences couvres le front-end, le back-end et la gestion de bases de données"
+      "presentation-one": "Bienvenue sur mon portfolio ! Je suis une développeuse junior diplômée depuis mars 2024.",
+      "presentation-two": "Après plusieurs années d'expérience professionnelle dans l'administration des ventes et la logistique, j'ai décidé de me reconvertir dans le domaine passionnant du développement web",
+      "presentation-three": "Pendant mes études, j'ai réalisé plusieurs projets, et depuis, je continue de développer mes compétences en travaillant sur des projets de développement web indépendants.",
+      "presentation-four": "Toujours avide d'apprendre de nouvelles choses, je me forme continuellement et mets en pratique mes connaissances dans des projets qui me passionnent. Actuellement, je me forme en autodidacte sur TypeScript et Angular sur des projets qui seront bientôt visibles ici."
     }
   }
 }

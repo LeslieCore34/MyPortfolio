@@ -1,0 +1,13 @@
+{
+  "en": {
+    "home": "Home",
+    "presentation": "Presentation",
+    "projects": "Projects"
+  },
+
+  "fr": {
+    "home": "Accueil",
+    "presentation": "Présentation",
+    "projects": "Projets"
+  }
+}

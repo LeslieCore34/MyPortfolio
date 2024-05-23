@@ -273,7 +273,8 @@ html {
       margin-bottom: 20px;
       .presentation-one,
       .presentation-two,
-      .presentation-three {
+      .presentation-three,
+      .presentation-four {
         margin-bottom: 12px;
         font-family: "Poppins", sans-serif;
         font-weight: 400;
@@ -359,11 +360,13 @@ html {
     font-style: normal;
     margin-bottom: 1em;
     font-size: 25px;
+    padding-left: 2em;
   }
 
   .bullet-point-image {
     display: flex;
     flex-direction: row;
+    padding-left: 2em;
   }
 
   .expertise-category-title {
@@ -382,6 +385,7 @@ html {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
+    padding-left: 2em;
   }
 }
 
@@ -403,6 +407,7 @@ html {
   font-size: 28px;
   padding-top: 25px;
   padding-bottom: 25px;
+
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   background: #fafafa;
@@ -416,10 +421,9 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 0px inset grey;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  background-color: white;
-  border-radius: 5px;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 251, 251, 0.96);
 
   .project-title {
     display: flex;
@@ -950,6 +954,59 @@ html {
 
   .expertise-category-container .technical-text {
     font-size: 17px;
+  }
+
+  .stack-container {
+    .container {
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 50px;
+      height: 50px;
+    }
+
+    .html {
+      background-image: url(../assets/stack/html-1.svg);
+      width: 55px;
+      height: 64px;
+    }
+    .css {
+      background-image: url(../assets/stack/css-3.svg);
+      width: 55px;
+      height: 64px;
+    }
+    .javascript {
+      background-image: url(../assets/stack/javascript-1.svg);
+      width: 55px;
+      height: 64px;
+    }
+    .typescript {
+      background-image: url(../assets/stack/typescript-2.svg);
+      width: 59px;
+      height: 60px;
+    }
+    .react {
+      background-image: url(../assets/stack/react-2.svg);
+      width: 59px;
+      height: 60px;
+    }
+    .node {
+      background-image: url(../assets/stack/nodejs-icon.svg);
+      width: 52px;
+      height: 57px;
+    }
+    .express {
+      background-image: url(../assets/stack/express-109.svg);
+    }
+    .mysql {
+      background-image: url(../assets/stack/mysql-2.svg);
+      width: 71px;
+      height: 76px;
+    }
+    .postman {
+      background-image: url(../assets/stack/postman.svg);
+      width: 63px;
+      height: 64px;
+    }
   }
 
   //PROJECT
