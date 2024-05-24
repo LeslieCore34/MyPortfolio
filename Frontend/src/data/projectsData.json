@@ -60,7 +60,7 @@
       "fr": "Eshop est un projet que je développe actuellement. C'est une site de e-commerce qui se veut simple avec différentes fonctionnalités."
     },
     "usage": {
-      "en": "Please browse through the articles and purchase some (stripe test mode only)!",
+      "en": "Please browse through the articles and purchase some articles (stripe test mode only)!",
       "fr": "N'hésitez pas à parcourir les articles !"
     },
     "technologies": [
