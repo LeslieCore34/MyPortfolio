@@ -5,7 +5,7 @@
       "en": "Street-art Hunters",
       "fr": "Street-art Hunters"
     },
-    "image": "src/assets/street-art-devices2.png",
+    "image": "./street-art-devices2.png",
     "description": {
       "en": "Street-Art Hunters is a project I developed with two classmates during my studies.",
       "fr": "Street-Art Hunters est un projet que j'ai développé avec deux de mes camarades pendant mes études."
@@ -54,7 +54,7 @@
       "en": "E-shop",
       "fr": "E-shop"
     },
-    "image": "src/assets/Eshop.png",
+    "image": "./Eshop.png",
     "description": {
       "en": "Eshop is a project I am currently developing. It's a simple ecommerce website that allows you to browse through products and complete your purchase.",
       "fr": "Eshop est un projet que je développe actuellement. C'est une site de e-commerce qui se veut simple avec différentes fonctionnalités."
