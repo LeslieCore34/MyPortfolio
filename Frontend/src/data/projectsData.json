@@ -5,7 +5,7 @@
       "en": "Street-art Hunters",
       "fr": "Street-art Hunters"
     },
-    "image": "./src/assets/street-art-devices2.png",
+    "image": "assets/street-art-devices2.png",
     "description": {
       "en": "Street-Art Hunters is a project I developed with two classmates during my studies.",
       "fr": "Street-Art Hunters est un projet que j'ai développé avec deux de mes camarades pendant mes études."
