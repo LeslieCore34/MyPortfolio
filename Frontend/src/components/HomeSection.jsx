@@ -1,14 +1,19 @@
 import PropTypes from "prop-types";
 import Typewriter from "./Typewritter";
+import { useLanguageContext } from "../context/langageContext";
+import presentationData from "../data/presentationData.json";
 
 export default function HomeSection({ menuOpen }) {
+  const { language } = useLanguageContext();
+  const data = presentationData[language];
+
   return (
     <>
       <section
         id="section-home"
         className={`home ${menuOpen ? "menu-active" : ""}`}
       >
-        <h1 className="fullstack">FULLSTACK DEVELOPER</h1>
+        <h1 className="fullstack">{data["job-title"]}</h1>
         <p className="name"> Leslie</p>
         <p className="surname">ABAJOLI</p>
         <div className="container-for-animation">
